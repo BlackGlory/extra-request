@@ -1,36 +1,37 @@
 import { Headers, Request } from 'cross-fetch'
 import { HTTPOptions, HTTPOptionsTransformer } from '@src/types'
+import { Falsy, isFunction } from '@blackglory/types'
 
-export function get(...transformers: HTTPOptionsTransformer[]): Request {
+export function get(...transformers: Array<HTTPOptionsTransformer | Falsy>): Request {
   return request('GET', ...transformers)
 }
 
-export function head(...transformers: HTTPOptionsTransformer[]): Request {
+export function head(...transformers: Array<HTTPOptionsTransformer | Falsy>): Request {
   return request('HEAD', ...transformers)
 }
 
-export function post(...transformers: HTTPOptionsTransformer[]): Request {
+export function post(...transformers: Array<HTTPOptionsTransformer | Falsy>): Request {
   return request('POST', ...transformers)
 }
 
-export function put(...transformers: HTTPOptionsTransformer[]): Request {
+export function put(...transformers: Array<HTTPOptionsTransformer | Falsy>): Request {
   return request('PUT', ...transformers)
 }
 
-export function patch(...transformers: HTTPOptionsTransformer[]): Request {
+export function patch(...transformers: Array<HTTPOptionsTransformer | Falsy>): Request {
   return request('PATCH', ...transformers)
 }
 
-export function del(...transformers: HTTPOptionsTransformer[]): Request {
+export function del(...transformers: Array<HTTPOptionsTransformer | Falsy>): Request {
   return request('DELETE', ...transformers)
 }
 
 function request(
   method: 'GET' | 'HEAD' | 'PUT' | 'POST' | 'PATCH' | 'DELETE'
-, ...transformers: HTTPOptionsTransformer[]
+, ...transformers: Array<HTTPOptionsTransformer | Falsy>
 ): Request {
   const options: HTTPOptions = transformers.reduce<HTTPOptions>(
-    (options, trans) => trans(options)
+    (options, trans) => isFunction(trans) ? trans(options) : options
   , {
       url: new URL('http://localhost')
     , headers: new Headers()

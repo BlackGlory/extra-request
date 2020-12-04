@@ -1,42 +1,42 @@
 import { url } from '@src/transformers'
 import { get, head, post, put, patch, del } from '@src/request'
 
-test('get(...transformers: HTTPOptionsTransformer[]): Request', () => {
+test('get(...transformers: Array<HTTPOptionsTransformer | Falsy>): Request', () => {
   const req = get(url('http://example.com'))
 
   expect(req.method).toBe('GET')
   expect(req.url).toBe('http://example.com/')
 })
 
-test('head(...transformers: HTTPOptionsTransformer[]: Request', () => {
+test('head(...transformers: Array<HTTPOptionsTransformer | Falsy>): Request', () => {
   const req = head(url('http://example.com'))
 
   expect(req.method).toBe('HEAD')
   expect(req.url).toBe('http://example.com/')
 })
 
-test('post(...transformers: HTTPOptionsTransformer[]): Request', () => {
+test('post(...transformers: Array<HTTPOptionsTransformer | Falsy>): Request', () => {
   const req = post(url('http://example.com'))
 
   expect(req.method).toBe('POST')
   expect(req.url).toBe('http://example.com/')
 })
 
-test('put(...transformers: HTTPOptionsTransformer[]): Request', () => {
+test('put(...transformers: Array<HTTPOptionsTransformer | Falsy>): Request', () => {
   const req = put(url('http://example.com'))
 
   expect(req.method).toBe('PUT')
   expect(req.url).toBe('http://example.com/')
 })
 
-test('patch(...transformers: HTTPOptionsTransformer[]): Request', () => {
+test('patch(...transformers: Array<HTTPOptionsTransformer | Falsy>): Request', () => {
   const req = patch(url('http://example.com'))
 
   expect(req.method).toBe('PATCH')
   expect(req.url).toBe('http://example.com/')
 })
 
-test('del(...transformers: HTTPOptionsTrransformer[]): Request', () => {
+test('del(...transformers: Array<HTTPOptionsTrransformer | Falsy>): Request', () => {
   const req = del(url('http://example.com'))
 
   expect(req.method).toBe('DELETE')

@@ -39,37 +39,37 @@ type HTTPOptionsTransformer = (options: HTTPOptions) => HTTPOptions
 ### get
 
 ```ts
-function get(...transformers: HTTPOptionsTransformer[]): Request
+function get(...transformers: Array<HTTPOptionsTransformer | Falsy>): Request
 ```
 
 ### head
 
 ```ts
-function head(...transformers: HTTPOptionsTransformer[]: Request
+function head(...transformers: Array<HTTPOptionsTransformer | Falsy>: Request
 ```
 
 ### post
 
 ```ts
-function post(...transformers: HTTPOptionsTransformer[]): Request
+function post(...transformers: Array<HTTPOptionsTransformer | Falsy>): Request
 ```
 
 ### put
 
 ```ts
-function put(...transformers: HTTPOptionsTransformer[]): Request
+function put(...transformers: Array<HTTPOptionsTransformer | Falsy>): Request
 ```
 
 ### patch
 
 ```ts
-function patch(...transformers: HTTPOptionsTransformer[]): Request
+function patch(...transformers: Array<HTTPOptionsTransformer | Falsy>): Request
 ```
 
 ### del
 
 ```ts
-function del(...transformers: HTTPOptionsTrransformer[]): Request
+function del(...transformers: Array<HTTPOptionsTrransformer | Falsy>): Request
 ```
 
 ### Transformers
