@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.1](https://github.com/BlackGlory/extra-request/compare/v0.2.0...v0.2.1) (2020-12-22)
+
+
+### Features
+
+* replace Json with any ([500aa24](https://github.com/BlackGlory/extra-request/commit/500aa24d04c6ad248e89434cfbbc4745ce0f9671))
+
 ## [0.2.0](https://github.com/BlackGlory/extra-request/compare/v0.1.1...v0.2.0) (2020-12-05)
 
 
