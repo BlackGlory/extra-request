@@ -1,6 +1,6 @@
 # extra-request
 
-Utility for [Request](https://developer.mozilla.org/en-US/docs/Web/API/Request).
+Utilities for [Request](https://developer.mozilla.org/en-US/docs/Web/API/Request).
 
 ## Install
 

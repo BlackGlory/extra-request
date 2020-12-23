@@ -1,8 +1,8 @@
 {
   "name": "extra-request",
   "version": "0.2.2",
-  "description": "Utility for fetch.",
-  "keywords": [],
+  "description": "Utilities for Request",
+  "keywords": ["fetch", "Request"],
   "files": [
     "lib",
     "dist"
