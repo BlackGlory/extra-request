@@ -14,7 +14,7 @@ function createOptions({ directory, target }) {
     , plugins: [
         typescript({ target })
       , json()
-      , resolve()
+      , resolve({ browser: true })
       , commonjs()
       ]
     }
@@ -24,7 +24,7 @@ function createOptions({ directory, target }) {
     , plugins: [
         typescript({ target })
       , json()
-      , resolve()
+      , resolve({ browser: true })
       , commonjs()
       , terser()
       ]
