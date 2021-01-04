@@ -61,7 +61,7 @@
     "typescript": "^4.1.3"
   },
   "dependencies": {
-    "@blackglory/types": "^0.2.1",
+    "@blackglory/types": "^0.2.4",
     "cross-fetch": "^3.0.6"
   }
 }

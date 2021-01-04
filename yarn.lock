@@ -292,13 +292,13 @@
   resolved "https://registry.yarnpkg.com/@blackglory/types/-/types-0.1.7.tgz#3007d9e6b79943e5310105bef288a423f32950d2"
   integrity sha512-SfRGxA/azjxvreiZKQs+n0VHeDyWT63sejlMD4GHUAjN1jY2e8HMiBU30ersUiEEJxGLnWlH7cW6B6A3Z71b6g==
 
-"@blackglory/types@^0.2.1":
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/@blackglory/types/-/types-0.2.1.tgz#58722098a3f0e9fbce88179df718a14cc7755c50"
-  integrity sha512-7kbbr3mAWKSDtumKRkjkNlFDZwmgUItXubpArjYBBlUdMFw6m4247gxVwOiHTqGMV5vmOIgEXr8Ox/qqy13GIg==
+"@blackglory/types@^0.2.4":
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/@blackglory/types/-/types-0.2.4.tgz#5eb4c7c53a9ad7d60ceb6b036ae64c18486aefdd"
+  integrity sha512-bHadZ24Jn4Fjbl61gb58LbMyAWgHbIF9y+fbfLVGcwGlNrOA9rOtjgFLVd4icRzfCFgZCTr8LXcu5IHBf702ug==
   dependencies:
-    "@types/node" "^14.14.14"
-    ajv "^7.0.1"
+    "@types/node" "^14.14.19"
+    ajv "^7.0.3"
 
 "@cnakazawa/watch@^1.0.3":
   version "1.0.4"
@@ -901,10 +901,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.10.tgz#5958a82e41863cfc71f2307b3748e3491ba03785"
   integrity sha512-J32dgx2hw8vXrSbu4ZlVhn1Nm3GbeCFNw2FWL8S5QKucHGY0cyNwjdQdO+KMBZ4wpmC7KhLCiNsdk1RFRIYUQQ==
 
-"@types/node@^14.14.14":
-  version "14.14.14"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.14.tgz#f7fd5f3cc8521301119f63910f0fb965c7d761ae"
-  integrity sha512-UHnOPWVWV1z+VV8k6L1HhG7UbGBgIdghqF3l9Ny9ApPghbjICXkUJSd/b9gOgQfjM1r+37cipdw/HJ3F6ICEnQ==
+"@types/node@^14.14.19":
+  version "14.14.19"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.19.tgz#5135176a8330b88ece4e9ab1fdcfc0a545b4bab4"
+  integrity sha512-4nhBPStMK04rruRVtVc6cDqhu7S9GZai0fpXgPXrFpcPX6Xul8xnrjSdGB4KPBVYG/R5+fXWdCM8qBoiULWGPQ==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.0"
@@ -1085,10 +1085,10 @@ ajv@^6.10.0, ajv@^6.12.3, ajv@^6.12.4:
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
 
-ajv@^7.0.1:
-  version "7.0.2"
-  resolved "https://registry.yarnpkg.com/ajv/-/ajv-7.0.2.tgz#04ccc89a93449c64382fe0846d45a7135d986dbc"
-  integrity sha512-qIaxO9RXjaXyO21tJr0EvwPcZa49m64GcXCU8ZrLjCAlFyMuOcPpI560So4A11M1WsKslJYIXn6jSyG5P0xIeg==
+ajv@^7.0.3:
+  version "7.0.3"
+  resolved "https://registry.yarnpkg.com/ajv/-/ajv-7.0.3.tgz#13ae747eff125cafb230ac504b2406cf371eece2"
+  integrity sha512-R50QRlXSxqXcQP5SvKUrw8VZeypvo12i2IX0EeR5PiZ7bEKeHWgzgo264LDadUsCU42lTJVhFikTqJwNeH34gQ==
   dependencies:
     fast-deep-equal "^3.1.1"
     json-schema-traverse "^1.0.0"
