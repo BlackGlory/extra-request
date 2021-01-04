@@ -3,6 +3,7 @@ import commonjs from '@rollup/plugin-commonjs'
 import resolve from '@rollup/plugin-node-resolve'
 import json from '@rollup/plugin-json'
 import { terser } from 'rollup-plugin-terser'
+import analyze from 'rollup-plugin-analyzer'
 
 const UMD_NAME = 'ExtraRequest'
 
@@ -16,6 +17,7 @@ function createOptions({ directory, target }) {
       , json()
       , resolve({ browser: true })
       , commonjs()
+      , analyze({ summaryOnly: true })
       ]
     }
   , {
