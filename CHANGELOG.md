@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.4](https://github.com/BlackGlory/extra-request/compare/v0.2.3...v0.2.4) (2021-01-04)
+
+
+### Bug Fixes
+
+* bundle for browser ([532fdf0](https://github.com/BlackGlory/extra-request/commit/532fdf0c19bd2c7cfab5b5dd7b368bce48c75659))
+
 ### [0.2.3](https://github.com/BlackGlory/extra-request/compare/v0.2.2...v0.2.3) (2020-12-23)
 
 ### [0.2.2](https://github.com/BlackGlory/extra-request/compare/v0.2.1...v0.2.2) (2020-12-22)
