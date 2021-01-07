@@ -7,6 +7,17 @@ import analyze from 'rollup-plugin-analyzer'
 
 const UMD_NAME = 'ExtraRequest'
 
+export default [
+  ...createOptions({
+    directory: 'es2015'
+  , target: 'ES2015'
+  })
+, ...createOptions({
+    directory: 'es2018'
+  , target: 'ES2018'
+  })
+]
+
 function createOptions({ directory, target }) {
   return [
     {
@@ -48,7 +59,7 @@ function createOptions({ directory, target }) {
       }
     ]
   }
-  k
+
   function createMinification(name) {
     return [
       {
@@ -65,14 +76,3 @@ function createOptions({ directory, target }) {
     ]
   }
 }
-
-export default [
-  ...createOptions({
-    directory: 'es2015'
-  , target: 'ES2015'
-  })
-, ...createOptions({
-    directory: 'es2018'
-  , target: 'ES2018'
-  })
-]
