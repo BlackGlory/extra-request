@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.6](https://github.com/BlackGlory/extra-request/compare/v0.2.5...v0.2.6) (2021-01-07)
+
+
+### Features
+
+* add formDataField ([ac81904](https://github.com/BlackGlory/extra-request/commit/ac819041eaa7d6c13b315b926fe650f8bd9aa9c0))
+
 ### [0.2.5](https://github.com/BlackGlory/extra-request/compare/v0.2.4...v0.2.5) (2021-01-04)
 
 ### [0.2.4](https://github.com/BlackGlory/extra-request/compare/v0.2.3...v0.2.4) (2021-01-04)
