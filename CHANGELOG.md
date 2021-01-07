@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.7](https://github.com/BlackGlory/extra-request/compare/v0.2.6...v0.2.7) (2021-01-07)
+
+
+### Features
+
+* support array ([c9635a6](https://github.com/BlackGlory/extra-request/commit/c9635a6dd444aee0924fd01c0c90cdc8196028e4))
+
 ### [0.2.6](https://github.com/BlackGlory/extra-request/compare/v0.2.5...v0.2.6) (2021-01-07)
 
 
