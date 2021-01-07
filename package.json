@@ -12,10 +12,6 @@
   ],
   "main": "lib/es2018/index.js",
   "types": "lib/es2018/index.d.ts",
-  "browser": {
-    "./lib/es2015/transformers/form-data-field.js": "./lib/es2015/transformers/form-data-field.browser.js",
-    "./lib/es2018/transformers/form-data-field.js": "./lib/es2018/transformers/form-data-field.browser.js"
-  },
   "repository": "git@github.com:BlackGlory/extra-request.git",
   "author": "BlackGlory <woshenmedoubuzhidao@blackglory.me>",
   "license": "MIT",
