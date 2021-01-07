@@ -133,3 +133,14 @@ function search(search: string): HTTPOptionsTransformer
 ```ts
 function searchParams(searchParams: { [name: string]: string }): HTTPOptionsTransformer
 ```
+
+### formDataField
+
+```ts
+function formDataField(
+  name: string
+, value: string
+       | Blob // browser only
+       | ReadableStream | NodeJS.ReadableStream // Node.js only
+): HTTPOptionsTransformer
+```
