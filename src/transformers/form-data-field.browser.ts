@@ -2,23 +2,20 @@ import { HTTPOptions, HTTPOptionsTransformer } from '@src/types'
 
 export function formDataField(
   name: string
-, value: string | Blob
+, value: string | string[] | Blob
 ): HTTPOptionsTransformer {
   return (options: HTTPOptions) => {
-    if (options.payload instanceof FormData) {
-      const formData = cloneFormData(options.payload)
-      formData.append(name, value)
-      return {
-        ...options
-      , payload: formData
-      }
+    const formData = options.payload instanceof FormData
+                   ? cloneFormData(options.payload)
+                   : new FormData()
+    if (Array.isArray(value)) {
+      value.forEach(x => formData.append(name, x))
     } else {
-      const formData = new FormData()
       formData.append(name, value)
-      return {
-        ...options
-      , payload: formData
-      }
+    }
+    return {
+      ...options
+    , payload: formData
     }
   }
 }

@@ -3,25 +3,22 @@ import { HTTPOptions, HTTPOptionsTransformer } from '@src/types'
 
 export function formDataField(
   name: string
-, value: string
+, value: string | string[]
        | Blob // browser only
        | ReadableStream | NodeJS.ReadableStream // Node.js only
 ): HTTPOptionsTransformer {
   return (options: HTTPOptions) => {
-    if (options.payload instanceof FormDataNode) {
-      const formData = cloneFormData(options.payload)
-      formData.append(name, value)
-      return {
-        ...options
-      , payload: formData as FormData
-      }
+    const formData = options.payload instanceof FormDataNode
+                    ? cloneFormData(options.payload)
+                    : new FormDataNode()
+    if (Array.isArray(value)) {
+      value.forEach(x => formData.append(name, x))
     } else {
-      const formData = new FormDataNode()
       formData.append(name, value)
-      return {
-        ...options
-      , payload: formData as FormData
-      }
+    }
+    return {
+      ...options
+    , payload: formData as FormData
     }
   }
 }
