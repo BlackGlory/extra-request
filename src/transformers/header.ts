@@ -1,4 +1,4 @@
-import { Headers } from 'cross-fetch'
+import { Headers } from 'extra-fetch'
 import { HTTPOptions, HTTPOptionsTransformer } from '@src/types'
 
 export function header(name: string, value: string): HTTPOptionsTransformer {

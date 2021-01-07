@@ -1,4 +1,4 @@
-import { Headers, Request } from 'cross-fetch'
+import { Headers, Request } from 'extra-fetch'
 import { HTTPOptions, HTTPOptionsTransformer } from '@src/types'
 import { Falsy, isFunction } from '@blackglory/types'
 

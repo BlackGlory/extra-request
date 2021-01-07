@@ -4,7 +4,6 @@ import resolve from '@rollup/plugin-node-resolve'
 import json from '@rollup/plugin-json'
 import { terser } from 'rollup-plugin-terser'
 import analyze from 'rollup-plugin-analyzer'
-import alias from '@rollup/plugin-alias'
 
 const UMD_NAME = 'ExtraRequest'
 
@@ -21,16 +20,12 @@ export default [
 
 function createOptions({ directory, target }) {
   const commonPlugins = [
-    alias({
-      entries: [
-        { find: '@transformers/form-data-field', replacement: '@transformers/form-data-field.browser' }
-      ]
-    })
-  , typescript({ target })
+    typescript({ target })
   , json()
   , resolve({ browser: true })
   , commonjs()
   ]
+
   return [
     {
       input: 'src/browser.ts'

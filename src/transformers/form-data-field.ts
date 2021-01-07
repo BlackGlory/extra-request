@@ -1,4 +1,4 @@
-import FormDataNode from 'formdata-node'
+import { FormData } from 'extra-fetch'
 import { HTTPOptions, HTTPOptionsTransformer } from '@src/types'
 
 export function formDataField(
@@ -8,13 +8,13 @@ export function formDataField(
        | ReadableStream | NodeJS.ReadableStream // Node.js only
 ): HTTPOptionsTransformer {
   return (options: HTTPOptions) => {
-    const formData = options.payload instanceof FormDataNode
+    const formData = options.payload instanceof FormData
                     ? cloneFormData(options.payload)
-                    : new FormDataNode()
+                    : new FormData()
     if (Array.isArray(value)) {
       value.forEach(x => formData.append(name, x))
     } else {
-      formData.append(name, value)
+      formData.append(name, value as any)
     }
     return {
       ...options
@@ -23,8 +23,8 @@ export function formDataField(
   }
 }
 
-function cloneFormData(formData: FormDataNode): FormDataNode {
-  const result = new FormDataNode()
+function cloneFormData(formData: FormData): FormData{
+  const result = new FormData()
   for (const [name, value] of formData.entries()) {
     result.append(name, value)
   }

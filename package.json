@@ -44,7 +44,6 @@
     "@blackglory/jest-matchers": "^0.1.7",
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
-    "@rollup/plugin-alias": "^3.1.1",
     "@rollup/plugin-commonjs": "^17.0.0",
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^11.0.1",
@@ -52,7 +51,6 @@
     "@types/jest": "^26.0.19",
     "@typescript-eslint/eslint-plugin": "^4.12.0",
     "@typescript-eslint/parser": "^4.12.0",
-    "abort-controller": "^3.0.0",
     "eslint": "^7.17.0",
     "husky": "^4.3.7",
     "jest": "^26.6.3",
@@ -68,7 +66,6 @@
   "dependencies": {
     "@blackglory/types": "^0.2.4",
     "@types/node": "^14.14.20",
-    "cross-fetch": "^3.0.6",
-    "formdata-node": "^2.4.0"
+    "extra-fetch": "^0.1.0"
   }
 }
