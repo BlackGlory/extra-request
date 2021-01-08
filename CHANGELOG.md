@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.3.0](https://github.com/BlackGlory/extra-request/compare/v0.2.11...v0.3.0) (2021-01-08)
+
+
+### ⚠ BREAKING CHANGES
+
+* formDataField(name: string, value: string | string[] | Blob |
+    ReadableStream | NodeJS.ReadableStream) => formDataField(name:
+      string, value: string | string[] | Blob)
+
+### Features
+
+* remove support for stream in FormData ([cb3d694](https://github.com/BlackGlory/extra-request/commit/cb3d69496e9e70f8860bd724615e0a0d7bd2ef88))
+
 ### [0.2.11](https://github.com/BlackGlory/extra-request/compare/v0.2.10...v0.2.11) (2021-01-08)
 
 ### [0.2.10](https://github.com/BlackGlory/extra-request/compare/v0.2.9...v0.2.10) (2021-01-07)
