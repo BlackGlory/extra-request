@@ -43,7 +43,7 @@ function request(
   return new Request(options.url.href, {
     method
   , headers
-  , signal: options.signal
+  , signal: options.signal ?? null // This is a patch, should be fixed in node-fetch@beta10
   , body: options.payload
   })
 }
