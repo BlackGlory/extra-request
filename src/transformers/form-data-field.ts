@@ -3,9 +3,7 @@ import { HTTPOptions, HTTPOptionsTransformer } from '@src/types'
 
 export function formDataField(
   name: string
-, value: string | string[]
-       | Blob // browser only
-       | ReadableStream | NodeJS.ReadableStream // Node.js only
+, value: string | string[] | Blob
 ): HTTPOptionsTransformer {
   return (options: HTTPOptions) => {
     const formData = options.payload instanceof FormData
@@ -14,7 +12,7 @@ export function formDataField(
     if (Array.isArray(value)) {
       value.forEach(x => formData.append(name, x))
     } else {
-      formData.append(name, value as any)
+      formData.append(name, value)
     }
     return {
       ...options

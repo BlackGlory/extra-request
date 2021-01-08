@@ -139,8 +139,6 @@ function searchParams(searchParams: { [name: string]: string }): HTTPOptionsTran
 ```ts
 function formDataField(
   name: string
-, value: string | string[]
-       | Blob // browser only
-       | ReadableStream | NodeJS.ReadableStream // Node.js only
+, value: string | string[] | Blob
 ): HTTPOptionsTransformer
 ```

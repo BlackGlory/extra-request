@@ -2358,12 +2358,13 @@ extglob@^2.0.4:
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
 
-extra-fetch@^0.1.4:
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/extra-fetch/-/extra-fetch-0.1.4.tgz#ff671b2a078115b9b5302e1531f48369da81996c"
-  integrity sha512-XxVlGDJi+5EQelzDxtpdukTsProUTBXxxgImOSREANPnVoDkfqolkoDJUn9VltrxFZxHhT56AXULGRcBVgH54w==
+extra-fetch@^0.1.6:
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/extra-fetch/-/extra-fetch-0.1.6.tgz#e1c741e5d472e614591aba8110eb17cbdc9ebaa6"
+  integrity sha512-gjTXBS7Jn+Lq09nnsukU9Rchc+zoOBGtoaLHUy8gEhOn7EmqBCwSFcI337NWoxjg9YWEyT0258iu7AjBYjBvVA==
   dependencies:
     abort-controller "^3.0.0"
+    fetch-blob "^2.1.1"
     formdata-node "^2.4.0"
     node-fetch "3.0.0-beta.9"
 
