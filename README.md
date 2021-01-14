@@ -92,6 +92,12 @@ function text(payload: string): HTTPOptionsTransformer
 function json(payload: Json): HTTPOptionsTransformer
 ```
 
+### csv
+
+```ts
+function csv<T extends object>(payload: T[]): HTTPOptionsTransformer
+`
+
 ### signal
 
 ```ts

@@ -6,6 +6,7 @@ test('exports', () => {
 
   , 'text'
   , 'json'
+  , 'csv'
 
   , 'signal'
 
