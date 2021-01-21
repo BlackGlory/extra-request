@@ -21,6 +21,8 @@ test('exports', () => {
   , 'searchParams'
 
   , 'formDataField'
+
+  , 'basicAuth'
   ].sort()
 
   const actualExports = Object.keys(target).sort()

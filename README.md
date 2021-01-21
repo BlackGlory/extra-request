@@ -148,3 +148,9 @@ function formDataField(
 , value: string | string[] | Blob
 ): HTTPOptionsTransformer
 ```
+
+### basicAuth
+
+```ts
+function basicAuth(username: string, password: string): HTTPOptionsTransformer
+```

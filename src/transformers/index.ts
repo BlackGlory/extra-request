@@ -17,3 +17,5 @@ export * from '@transformers/search-param'
 export * from '@transformers/search-params'
 
 export * from '@transformers/form-data-field'
+
+export * from '@transformers/basic-auth'
