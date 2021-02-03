@@ -1,4 +1,4 @@
-import FormDataNode from 'formdata-node'
+import { FormData } from 'extra-fetch'
 import { createOptions } from './utils'
 import { formDataField } from '@transformers/form-data-field'
 
@@ -8,7 +8,7 @@ describe('formDataField(naem: string, value: string | string[] | Blob | Readable
 
     const result = formDataField('name', 'value')(options)
 
-    expect(result.payload).toBeInstanceOf(FormDataNode)
+    expect(result.payload).toBeInstanceOf(FormData)
   })
 
   describe('value is array', () => {
@@ -16,7 +16,7 @@ describe('formDataField(naem: string, value: string | string[] | Blob | Readable
 
     const result = formDataField('name', ['value1', 'value2'])(options)
 
-    expect(result.payload).toBeInstanceOf(FormDataNode)
-    expect((result.payload as FormDataNode).getAll('name')).toEqual(['value1', 'value2'])
+    expect(result.payload).toBeInstanceOf(FormData)
+    expect((result.payload as FormData).getAll('name')).toEqual(['value1', 'value2'])
   })
 })

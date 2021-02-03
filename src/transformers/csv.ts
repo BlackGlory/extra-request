@@ -1,7 +1,7 @@
 import { Headers } from 'extra-fetch'
 import { HTTPOptions, HTTPOptionsTransformer } from '@src/types'
 import { unparse } from 'papaparse'
-import { assert } from 'typed-assert'
+import { assert } from '@blackglory/errors'
 
 export function csv<T extends object>(payload: T[]): HTTPOptionsTransformer {
   assert(payload.length > 0, 'payload must be a non-empty array')
