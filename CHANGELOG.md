@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/BlackGlory/extra-request/compare/v1.0.2...v1.1.0) (2021-02-19)
+
+
+### Features
+
+* add port ([9423054](https://github.com/BlackGlory/extra-request/commit/94230548e9a2db10667c38d582e775954ad41c4d))
+
 ### [1.0.2](https://github.com/BlackGlory/extra-request/compare/v1.0.1...v1.0.2) (2021-02-04)
 
 
