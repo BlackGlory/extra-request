@@ -122,6 +122,12 @@ function headers(headers: { [name: string]: string }): HTTPOptionsTransformer
 function host(host: string): HTTPOptionsTransformer
 ```
 
+### port
+
+```ts
+function port(port: number): HTTPOptionsTransformer
+```
+
 ### pathname
 
 ```ts

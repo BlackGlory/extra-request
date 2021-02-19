@@ -11,6 +11,7 @@ export * from '@transformers/headers'
 export * from '@transformers/accept'
 
 export * from '@transformers/host'
+export * from '@transformers/port'
 export * from '@transformers/pathname'
 export * from '@transformers/search'
 export * from '@transformers/search-param'
