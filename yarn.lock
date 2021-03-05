@@ -310,10 +310,10 @@
     ajv "^7.1.1"
     extra-dom "^0.2.9"
 
-"@blackglory/types@^0.2.24":
-  version "0.2.24"
-  resolved "https://registry.yarnpkg.com/@blackglory/types/-/types-0.2.24.tgz#f265da56ae44d5150e035e8a1a291a8e54846a74"
-  integrity sha512-JUmO03GgiO3l6rRwF/N9JrottPH6mWjGlnpuXSrt56rw9zalDd5tHKkQzNxI+sHVVRkUzrARoIjRUUfslROacA==
+"@blackglory/types@^0.2.25":
+  version "0.2.25"
+  resolved "https://registry.yarnpkg.com/@blackglory/types/-/types-0.2.25.tgz#f473fda1741c95e92cbaa2881e0b9a74a2582d00"
+  integrity sha512-8jtvDWkbseLcYSmi40xudWFK1OUQHxeRNR1sa4C/mtIs8A1WaAWWQWdpoEG9GfYEe9rnHMVTkaFcaiMBPluKHw==
   dependencies:
     ajv "^7.1.1"
     extra-dom "^0.2.12"
