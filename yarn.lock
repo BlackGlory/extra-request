@@ -310,12 +310,11 @@
     ajv "^7.1.1"
     extra-dom "^0.2.9"
 
-"@blackglory/types@^0.2.23":
-  version "0.2.23"
-  resolved "https://registry.yarnpkg.com/@blackglory/types/-/types-0.2.23.tgz#4e4d79f545fdf9901bedd4df3092e14897073717"
-  integrity sha512-shJnVh+oSAoxtBEQyEjGta+nqzfwOfvKyHmEG1GkrwdQFQHhtkQsKwEu9TI4UiGc5rt0X6iLXvG96j4bB504/w==
+"@blackglory/types@^0.2.24":
+  version "0.2.24"
+  resolved "https://registry.yarnpkg.com/@blackglory/types/-/types-0.2.24.tgz#f265da56ae44d5150e035e8a1a291a8e54846a74"
+  integrity sha512-JUmO03GgiO3l6rRwF/N9JrottPH6mWjGlnpuXSrt56rw9zalDd5tHKkQzNxI+sHVVRkUzrARoIjRUUfslROacA==
   dependencies:
-    "@types/node" "^14.14.31"
     ajv "^7.1.1"
     extra-dom "^0.2.12"
 
@@ -2304,9 +2303,9 @@ event-target-shim@^5.0.0:
   resolved "https://registry.yarnpkg.com/event-target-shim/-/event-target-shim-5.0.1.tgz#5d4d3ebdf9583d63a5333ce2deb7480ab2b05789"
   integrity sha512-i/2XbnSz/uxRCU6+NdVJgKWDTM427+MqYbkQzD321DuCQJUqOuJKIA0IM2+W2xtYHdKOmZ4dR6fExsd4SXL+WQ==
 
-"eventsource@git+https://github.com/EventSource/eventsource.git#46fe04e03e54f4129a28bf75b3a1e5f4ab68b52a":
+"eventsource@https://github.com/EventSource/eventsource#46fe04e03e54f4129a28bf75b3a1e5f4ab68b52a":
   version "1.0.7"
-  resolved "git+https://github.com/EventSource/eventsource.git#46fe04e03e54f4129a28bf75b3a1e5f4ab68b52a"
+  resolved "https://github.com/EventSource/eventsource#46fe04e03e54f4129a28bf75b3a1e5f4ab68b52a"
   dependencies:
     original "^1.0.0"
 

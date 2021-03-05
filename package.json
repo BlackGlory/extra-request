@@ -72,12 +72,11 @@
   },
   "dependencies": {
     "@blackglory/errors": "^1.1.2",
-    "@blackglory/types": "^0.2.23",
+    "@blackglory/types": "^0.2.24",
     "js-base64": "^3.6.0",
     "papaparse": "^5.3.0"
   },
   "peerDependencies": {
-    "@types/node": "^14.14.31",
     "extra-fetch": "^1.2.0"
   }
 }
