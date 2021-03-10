@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/BlackGlory/extra-request/compare/v1.1.7...v2.0.0) (2021-03-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* Rename `header` to `appendHeader`
+Rename `searchParam` to `appendSearchParam`
+Add `header`(use `Headers.set`)
+Add `searchParam`(use `URLSearchParams.set`)
+`headers` use `Headers.set` now
+`searchParams` use `URLSearchParams.set` now
+
+### Features
+
+* rewrite transformers ([be67b38](https://github.com/BlackGlory/extra-request/commit/be67b383adceb1ed7211fd8abd531330d119e673))
+
 ### [1.1.7](https://github.com/BlackGlory/extra-request/compare/v1.1.6...v1.1.7) (2021-03-05)
 
 ### [1.1.6](https://github.com/BlackGlory/extra-request/compare/v1.1.5...v1.1.6) (2021-03-05)
