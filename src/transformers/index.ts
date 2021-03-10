@@ -22,3 +22,5 @@ export * from '@transformers/append-search-param'
 export * from '@transformers/form-data-field'
 
 export * from '@transformers/basic-auth'
+
+export * from '@transformers/keepalive'

@@ -5,4 +5,5 @@ export interface HTTPOptions {
   headers: Headers
   payload?: string | FormData
   signal?: AbortSignal
+  keepalive?: boolean
 }

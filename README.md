@@ -178,3 +178,9 @@ function formDataField(
 ```ts
 function basicAuth(username: string, password: string): HTTPOptionsTransformer
 ```
+
+### keepalive
+
+```ts
+function keepalive(val: boolean = true): HTTPOptionsTransformer
+```
