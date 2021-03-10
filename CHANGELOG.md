@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://github.com/BlackGlory/extra-request/compare/v2.0.0...v2.1.0) (2021-03-10)
+
+
+### Features
+
+* add keepalive ([b2921eb](https://github.com/BlackGlory/extra-request/commit/b2921eb756398499f557b13e21040a7660c44f2a))
+
 ## [2.0.0](https://github.com/BlackGlory/extra-request/compare/v1.1.7...v2.0.0) (2021-03-10)
 
 
