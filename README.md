@@ -110,6 +110,12 @@ function signal(signal: AbortSignal): HTTPOptionsTransformer
 function header(name: string, value: string): HTTPOptionsTransformer
 ```
 
+### appendHeader
+
+```ts
+function appendHeader(name: string, value: string): HTTPOptionsTransformer
+```
+
 ### headers
 
 ```ts
@@ -138,6 +144,18 @@ function pathname(pathname: string): HTTPOptionsTransformer
 
 ```ts
 function search(search: string): HTTPOptionsTransformer
+```
+
+### searchParam
+
+```ts
+function searchParam(name: string, value: string): HTTPOptionsTransformer
+```
+
+### appendSearchParam
+
+```ts
+function appendSearchParam(name: string, value: string): HTTPOptionsTransformer
 ```
 
 ### searchParams

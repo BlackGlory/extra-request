@@ -5,7 +5,7 @@ export function headers(headers: { [name: string]: string }): HTTPOptionsTransfo
   return (options: HTTPOptions) => {
     const newHeaders = new Headers(options.headers)
     for (const [name, value] of Object.entries(headers)) {
-      newHeaders.append(name, value)
+      newHeaders.set(name, value)
     }
 
     return {

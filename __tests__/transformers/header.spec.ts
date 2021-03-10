@@ -4,7 +4,8 @@ import { header } from '@transformers/header'
 test('header(name: string, value: string): HTTPOptionsTransformer', () => {
   const options = createOptions()
 
-  const result = header('Content-Type', 'text/plain')(options)
+  let result = header('Content-Type', 'text/plain')(options)
+      result = header('Content-Type', 'application/json')(result)
 
-  expect(result.headers.get('Content-Type')).toBe('text/plain')
+  expect(result.headers.get('Content-Type')).toBe('application/json')
 })

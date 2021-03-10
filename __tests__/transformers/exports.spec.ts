@@ -11,6 +11,7 @@ test('exports', () => {
   , 'signal'
 
   , 'header'
+  , 'appendHeader'
   , 'headers'
   , 'accept'
 
@@ -19,6 +20,7 @@ test('exports', () => {
   , 'pathname'
   , 'search'
   , 'searchParam'
+  , 'appendSearchParam'
   , 'searchParams'
 
   , 'formDataField'

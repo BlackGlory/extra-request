@@ -8,7 +8,7 @@ export function csv<T extends object>(payload: T[]): HTTPOptionsTransformer {
 
   return (options: HTTPOptions) => {
     const headers = new Headers(options.headers)
-    headers.append('Content-Type', 'text/csv')
+    headers.set('Content-Type', 'text/csv')
 
     return {
       ...options
