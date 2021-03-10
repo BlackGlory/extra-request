@@ -29,7 +29,7 @@ const res = await fetch(req)
 interface HTTPOptions {
   url?: URL
   headers?: Headers
-  payload?: string
+  payload?: string | FormData
   signal?: AbortSignal
 }
 
@@ -96,7 +96,7 @@ function json(payload: Json): HTTPOptionsTransformer
 
 ```ts
 function csv<T extends object>(payload: T[]): HTTPOptionsTransformer
-`
+```
 
 ### signal
 
