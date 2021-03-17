@@ -1,7 +1,7 @@
 import { Headers } from 'extra-fetch'
-import { HTTPOptions } from '@src/types'
+import { IHTTPOptions } from '@src/types'
 
-export function createOptions(): HTTPOptions {
+export function createOptions(): IHTTPOptions {
   return {
     url: new URL('http://localhost')
   , headers: new Headers()

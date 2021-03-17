@@ -1,6 +1,6 @@
-export type HTTPOptionsTransformer = (options: HTTPOptions) => HTTPOptions
+export type IHTTPOptionsTransformer = (options: IHTTPOptions) => IHTTPOptions
 
-export interface HTTPOptions {
+export interface IHTTPOptions {
   url: URL
   headers: Headers
   payload?: string | FormData

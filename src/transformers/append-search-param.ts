@@ -1,7 +1,7 @@
-import { HTTPOptions, HTTPOptionsTransformer } from '@src/types'
+import { IHTTPOptions, IHTTPOptionsTransformer } from '@src/types'
 
-export function appendSearchParam(name: string, value: string): HTTPOptionsTransformer {
-  return (options: HTTPOptions) => {
+export function appendSearchParam(name: string, value: string): IHTTPOptionsTransformer {
+  return (options: IHTTPOptions) => {
     const url = new URL(options.url.href)
     const newSearchParams = new URLSearchParams(url.searchParams)
     newSearchParams.append(name, value)

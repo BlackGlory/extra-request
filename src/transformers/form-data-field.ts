@@ -1,11 +1,11 @@
 import { FormData } from 'extra-fetch'
-import { HTTPOptions, HTTPOptionsTransformer } from '@src/types'
+import { IHTTPOptions, IHTTPOptionsTransformer } from '@src/types'
 
 export function formDataField(
   name: string
 , value: string | string[] | Blob
-): HTTPOptionsTransformer {
-  return (options: HTTPOptions) => {
+): IHTTPOptionsTransformer {
+  return (options: IHTTPOptions) => {
     const formData = options.payload instanceof FormData
                     ? cloneFormData(options.payload)
                     : new FormData()

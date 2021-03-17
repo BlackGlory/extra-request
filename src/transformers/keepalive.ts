@@ -1,7 +1,7 @@
-import { HTTPOptionsTransformer, HTTPOptions } from '@src/types'
+import { IHTTPOptionsTransformer, IHTTPOptions } from '@src/types'
 
-export function keepalive(val: boolean = true): HTTPOptionsTransformer {
-  return (options: HTTPOptions) => {
+export function keepalive(val: boolean = true): IHTTPOptionsTransformer {
+  return (options: IHTTPOptions) => {
     return {
       ...options
     , keepalive: val
