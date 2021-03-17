@@ -1,6 +1,7 @@
 import { Headers, Request } from 'extra-fetch'
 import { HTTPOptions, HTTPOptionsTransformer } from '@src/types'
-import { Falsy, isFunction } from '@blackglory/types'
+import { isFunction } from '@blackglory/types'
+import { Falsy } from 'justypes'
 
 export function get(...transformers: Array<HTTPOptionsTransformer | Falsy>): Request {
   return request('GET', ...transformers)
