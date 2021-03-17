@@ -26,50 +26,50 @@ const res = await fetch(req)
 ## API
 
 ```
-interface HTTPOptions {
+interface IHTTPOptions {
   url?: URL
   headers?: Headers
   payload?: string | FormData
   signal?: AbortSignal
 }
 
-type HTTPOptionsTransformer = (options: HTTPOptions) => HTTPOptions
+type IHTTPOptionsTransformer = (options: IHTTPOptions) => HTTPOptions
 ```
 
 ### get
 
 ```ts
-function get(...transformers: Array<HTTPOptionsTransformer | Falsy>): Request
+function get(...transformers: Array<IHTTPOptionsTransformer | Falsy>): Request
 ```
 
 ### head
 
 ```ts
-function head(...transformers: Array<HTTPOptionsTransformer | Falsy>: Request
+function head(...transformers: Array<IHTTPOptionsTransformer | Falsy>: Request
 ```
 
 ### post
 
 ```ts
-function post(...transformers: Array<HTTPOptionsTransformer | Falsy>): Request
+function post(...transformers: Array<IHTTPOptionsTransformer | Falsy>): Request
 ```
 
 ### put
 
 ```ts
-function put(...transformers: Array<HTTPOptionsTransformer | Falsy>): Request
+function put(...transformers: Array<IHTTPOptionsTransformer | Falsy>): Request
 ```
 
 ### patch
 
 ```ts
-function patch(...transformers: Array<HTTPOptionsTransformer | Falsy>): Request
+function patch(...transformers: Array<IHTTPOptionsTransformer | Falsy>): Request
 ```
 
 ### del
 
 ```ts
-function del(...transformers: Array<HTTPOptionsTrransformer | Falsy>): Request
+function del(...transformers: Array<IHTTPOptionsTrransformer | Falsy>): Request
 ```
 
 ### Transformers
@@ -77,91 +77,91 @@ function del(...transformers: Array<HTTPOptionsTrransformer | Falsy>): Request
 #### url
 
 ```ts
-function url(...urls: [string, ...string[]]): HTTPOptionsTransformer
+function url(...urls: [string, ...string[]]): IHTTPOptionsTransformer
 ```
 
 ### text
 
 ```ts
-function text(payload: string): HTTPOptionsTransformer
+function text(payload: string): IHTTPOptionsTransformer
 ```
 
 ### json
 
 ```ts
-function json(payload: Json): HTTPOptionsTransformer
+function json(payload: Json): IHTTPOptionsTransformer
 ```
 
 ### csv
 
 ```ts
-function csv<T extends object>(payload: T[]): HTTPOptionsTransformer
+function csv<T extends object>(payload: T[]): IHTTPOptionsTransformer
 ```
 
 ### signal
 
 ```ts
-function signal(signal: AbortSignal): HTTPOptionsTransformer
+function signal(signal: AbortSignal): IHTTPOptionsTransformer
 ```
 
 ### header
 
 ```ts
-function header(name: string, value: string): HTTPOptionsTransformer
+function header(name: string, value: string): IHTTPOptionsTransformer
 ```
 
 ### appendHeader
 
 ```ts
-function appendHeader(name: string, value: string): HTTPOptionsTransformer
+function appendHeader(name: string, value: string): IHTTPOptionsTransformer
 ```
 
 ### headers
 
 ```ts
-function headers(headers: { [name: string]: string }): HTTPOptionsTransformer
+function headers(headers: { [name: string]: string }): IHTTPOptionsTransformer
 ```
 
 ### host
 
 ```ts
-function host(host: string): HTTPOptionsTransformer
+function host(host: string): IHTTPOptionsTransformer
 ```
 
 ### port
 
 ```ts
-function port(port: number): HTTPOptionsTransformer
+function port(port: number): IHTTPOptionsTransformer
 ```
 
 ### pathname
 
 ```ts
-function pathname(pathname: string): HTTPOptionsTransformer
+function pathname(pathname: string): IHTTPOptionsTransformer
 ```
 
 ### search
 
 ```ts
-function search(search: string): HTTPOptionsTransformer
+function search(search: string): IHTTPOptionsTransformer
 ```
 
 ### searchParam
 
 ```ts
-function searchParam(name: string, value: string): HTTPOptionsTransformer
+function searchParam(name: string, value: string): IHTTPOptionsTransformer
 ```
 
 ### appendSearchParam
 
 ```ts
-function appendSearchParam(name: string, value: string): HTTPOptionsTransformer
+function appendSearchParam(name: string, value: string): IHTTPOptionsTransformer
 ```
 
 ### searchParams
 
 ```ts
-function searchParams(searchParams: { [name: string]: string }): HTTPOptionsTransformer
+function searchParams(searchParams: { [name: string]: string }): IHTTPOptionsTransformer
 ```
 
 ### formDataField
@@ -170,17 +170,17 @@ function searchParams(searchParams: { [name: string]: string }): HTTPOptionsTran
 function formDataField(
   name: string
 , value: string | string[] | Blob
-): HTTPOptionsTransformer
+): IHTTPOptionsTransformer
 ```
 
 ### basicAuth
 
 ```ts
-function basicAuth(username: string, password: string): HTTPOptionsTransformer
+function basicAuth(username: string, password: string): IHTTPOptionsTransformer
 ```
 
 ### keepalive
 
 ```ts
-function keepalive(val: boolean = true): HTTPOptionsTransformer
+function keepalive(val: boolean = true): IHTTPOptionsTransformer
 ```
