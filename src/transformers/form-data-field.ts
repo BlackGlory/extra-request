@@ -7,13 +7,15 @@ export function formDataField(
 ): IHTTPOptionsTransformer {
   return (options: IHTTPOptions) => {
     const formData = options.payload instanceof FormData
-                    ? cloneFormData(options.payload)
-                    : new FormData()
+      ? cloneFormData(options.payload)
+      : new FormData()
+
     if (Array.isArray(value)) {
       value.forEach(x => formData.append(name, x))
     } else {
       formData.append(name, value)
     }
+
     return {
       ...options
     , payload: formData as FormData
