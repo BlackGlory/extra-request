@@ -149,19 +149,27 @@ function search(search: string): IHTTPOptionsTransformer
 ### searchParam
 
 ```ts
-function searchParam(name: string, value: string): IHTTPOptionsTransformer
+function searchParam(
+  name: string
+, value: string | number
+): IHTTPOptionsTransformer
 ```
 
 ### appendSearchParam
 
 ```ts
-function appendSearchParam(name: string, value: string): IHTTPOptionsTransformer
+function appendSearchParam(
+  name: string
+, value: string | number
+): IHTTPOptionsTransformer
 ```
 
 ### searchParams
 
 ```ts
-function searchParams(searchParams: { [name: string]: string }): IHTTPOptionsTransformer
+function searchParams(
+  searchParams: { [name: string]: string | number }
+): IHTTPOptionsTransformer
 ```
 
 ### formDataField
