@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.3.0](https://github.com/BlackGlory/extra-request/compare/v2.2.0...v2.3.0) (2021-08-26)
+
+
+### Features
+
+* add bearerAuth ([dedacf0](https://github.com/BlackGlory/extra-request/commit/dedacf0441173bac3d42ca3de0389d83c89bdb87))
+
 ## [2.2.0](https://github.com/BlackGlory/extra-request/compare/v2.1.5...v2.2.0) (2021-08-26)
 
 
