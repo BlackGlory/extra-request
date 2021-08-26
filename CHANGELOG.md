@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.2.0](https://github.com/BlackGlory/extra-request/compare/v2.1.5...v2.2.0) (2021-08-26)
+
+
+### Features
+
+* transformers related to SearchParams support numbers as values ([ea53da0](https://github.com/BlackGlory/extra-request/commit/ea53da08567d0c01ad60d1cbade3df1860a0da7b))
+
 ### [2.1.5](https://github.com/BlackGlory/extra-request/compare/v2.1.4...v2.1.5) (2021-07-03)
 
 ### [2.1.4](https://github.com/BlackGlory/extra-request/compare/v2.1.3...v2.1.4) (2021-04-27)
