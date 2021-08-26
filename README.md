@@ -187,6 +187,12 @@ function formDataField(
 function basicAuth(username: string, password: string): IHTTPOptionsTransformer
 ```
 
+### bearerAuth
+
+```ts
+function bearerAuth(token: string): IHTTPOptionsTransformer
+```
+
 ### keepalive
 
 ```ts

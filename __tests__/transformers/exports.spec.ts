@@ -26,6 +26,7 @@ test('exports', () => {
   , 'formDataField'
 
   , 'basicAuth'
+  , 'bearerAuth'
 
   , 'keepalive'
   ].sort()
