@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.3.1](https://github.com/BlackGlory/extra-request/compare/v2.3.0...v2.3.1) (2021-08-28)
+
+
+### Bug Fixes
+
+* remove `exports` field ([4d74e4c](https://github.com/BlackGlory/extra-request/commit/4d74e4c4b3b3ad51784d4eadc0c6dbefe2a86087))
+
 ## [2.3.0](https://github.com/BlackGlory/extra-request/compare/v2.2.0...v2.3.0) (2021-08-26)
 
 
