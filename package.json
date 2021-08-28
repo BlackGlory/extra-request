@@ -11,14 +11,6 @@
     "dist"
   ],
   "main": "lib/es2018/index.js",
-  "exports": {
-    ".": "./lib/es2018/index.js",
-    "./transformers/*": "./lib/es2018/transformers/*",
-    "./es2018": "./lib/es2018/index.js",
-    "./es2015": "./lib/es2015/index.js",
-    "./es2018/transformers/*": "./lib/es2018/transformers/*",
-    "./es2015/transformers/*": "./lib/es2015/transformers/*"
-  },
   "types": "lib/es2018/index.d.ts",
   "repository": "git@github.com:BlackGlory/extra-request.git",
   "author": "BlackGlory <woshenmedoubuzhidao@blackglory.me>",
