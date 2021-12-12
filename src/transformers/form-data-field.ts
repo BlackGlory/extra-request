@@ -1,5 +1,6 @@
 import { FormData } from 'extra-fetch'
 import { IHTTPOptions, IHTTPOptionsTransformer } from '@src/types'
+import { isArray } from '@blackglory/types'
 
 export function formDataField(
   name: string
@@ -10,7 +11,7 @@ export function formDataField(
       ? cloneFormData(options.payload)
       : new FormData()
 
-    if (Array.isArray(value)) {
+    if (isArray(value)) {
       value.forEach(x => formData.append(name, x))
     } else {
       formData.append(name, value)
