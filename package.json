@@ -1,6 +1,6 @@
 {
   "name": "extra-request",
-  "version": "3.0.3",
+  "version": "4.0.0",
   "description": "Utilities for Request",
   "keywords": [
     "fetch",
