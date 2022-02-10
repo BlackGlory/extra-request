@@ -19,6 +19,9 @@
     "./es2018/transformers/*": "./lib/es2018/transformers/*",
     "./es2015/transformers/*": "./lib/es2015/transformers/*"
   },
+  "engines": {
+    "node": ">=16"
+  },
   "types": "lib/es2018/index.d.ts",
   "repository": "git@github.com:BlackGlory/extra-request.git",
   "author": "BlackGlory <woshenmedoubuzhidao@blackglory.me>",
