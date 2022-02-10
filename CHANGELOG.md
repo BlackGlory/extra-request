@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.0.0](https://github.com/BlackGlory/extra-request/compare/v4.0.1...v5.0.0) (2022-02-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* The minimal version is Node.js v16
+* requires extra-fetch 2.0.0
+
+* add engines field ([c3e3b46](https://github.com/BlackGlory/extra-request/commit/c3e3b46fb17877065da9b6e842d0aa6157d93049))
+* upgrade dependencies ([d968eb0](https://github.com/BlackGlory/extra-request/commit/d968eb03d878b91071f050b8cc1002f5359f4df9))
+
 ### [4.0.1](https://github.com/BlackGlory/extra-request/compare/v4.0.0...v4.0.1) (2021-12-17)
 
 ## [4.0.0](https://github.com/BlackGlory/extra-request/compare/v3.0.3...v4.0.0) (2021-12-17)
