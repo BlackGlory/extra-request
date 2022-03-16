@@ -1,5 +1,5 @@
 import { Headers } from 'extra-fetch'
-import { IHTTPOptions } from '@src/types'
+import { IHTTPOptions } from '@src/types.js'
 
 export function createOptions(): IHTTPOptions {
   return {

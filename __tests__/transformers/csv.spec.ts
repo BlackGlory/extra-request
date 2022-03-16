@@ -1,5 +1,5 @@
-import { createOptions } from './utils'
-import { csv } from '@transformers/csv'
+import { createOptions } from './utils.js'
+import { csv } from '@transformers/csv.js'
 
 test('csv<T extends object>(payload: T[]): HTTPOptionsTransformer', () => {
   const options = createOptions()

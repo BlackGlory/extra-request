@@ -1,5 +1,5 @@
 import { Headers } from 'extra-fetch'
-import { IHTTPOptions, IHTTPOptionsTransformer } from '@src/types'
+import { IHTTPOptions, IHTTPOptionsTransformer } from '@src/types.js'
 
 export function headers(headers: { [name: string]: string }): IHTTPOptionsTransformer {
   return (options: IHTTPOptions) => {

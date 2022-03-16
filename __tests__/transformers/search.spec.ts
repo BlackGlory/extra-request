@@ -1,5 +1,5 @@
-import { createOptions } from './utils'
-import { search } from '@transformers/search'
+import { createOptions } from './utils.js'
+import { search } from '@transformers/search.js'
 
 test('search(search: string): HTTPOptionsTransformer', () => {
   const options = createOptions()

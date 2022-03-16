@@ -1,5 +1,5 @@
-import { url } from '@src/transformers'
-import { get, head, post, put, patch, del } from '@src/request'
+import { url } from '@src/transformers/index.js'
+import { get, head, post, put, patch, del } from '@src/request.js'
 
 test('get(...transformers: Array<HTTPOptionsTransformer | Falsy>): Request', () => {
   const req = get(url('http://example.com'))

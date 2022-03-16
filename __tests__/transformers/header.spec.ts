@@ -1,5 +1,5 @@
-import { createOptions } from './utils'
-import { header } from '@transformers/header'
+import { createOptions } from './utils.js'
+import { header } from '@transformers/header.js'
 
 test('header(name: string, value: string): HTTPOptionsTransformer', () => {
   const options = createOptions()

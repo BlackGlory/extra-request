@@ -1,5 +1,5 @@
-import { keepalive } from '@transformers/keepalive'
-import { createOptions } from './utils'
+import { keepalive } from '@transformers/keepalive.js'
+import { createOptions } from './utils.js'
 
 test('keepalive(): HTTPOptionsTransformer', () => {
   const options = createOptions()

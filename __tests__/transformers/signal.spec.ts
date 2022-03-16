@@ -1,5 +1,5 @@
-import { createOptions } from './utils'
-import { signal } from '@transformers/signal'
+import { createOptions } from './utils.js'
+import { signal } from '@transformers/signal.js'
 import { AbortController } from 'extra-fetch'
 
 test('signal(signal: AbortSignal): HTTPOptionsTransformer', () => {

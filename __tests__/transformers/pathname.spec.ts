@@ -1,5 +1,5 @@
-import { pathname } from '@transformers/pathname'
-import { createOptions } from './utils'
+import { pathname } from '@transformers/pathname.js'
+import { createOptions } from './utils.js'
 
 test('pathname(pathname: string): HTTPOptionsTransformer', () => {
   const options = createOptions()

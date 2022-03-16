@@ -1,5 +1,5 @@
-import { createOptions } from './utils'
-import { port } from '@transformers/port'
+import { createOptions } from './utils.js'
+import { port } from '@transformers/port.js'
 
 test('port(port: number): HTTPOptionsTransformer', () => {
   const options = createOptions()

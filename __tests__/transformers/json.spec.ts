@@ -1,5 +1,5 @@
-import { createOptions } from './utils'
-import { json } from '@transformers/json'
+import { createOptions } from './utils.js'
+import { json } from '@transformers/json.js'
 
 test('json(payload: Json): HTTPOptionsTransformer', () => {
   const options = createOptions()

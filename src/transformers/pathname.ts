@@ -1,4 +1,4 @@
-import { IHTTPOptions, IHTTPOptionsTransformer } from '@src/types'
+import { IHTTPOptions, IHTTPOptionsTransformer } from '@src/types.js'
 
 export function pathname(pathname: string): IHTTPOptionsTransformer {
   return (options: IHTTPOptions) => {

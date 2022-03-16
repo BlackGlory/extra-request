@@ -1,4 +1,4 @@
-import * as target from '@transformers/index'
+import * as target from '@transformers/index.js'
 
 test('exports', () => {
   const expectedExports: string[] = [

@@ -1,5 +1,5 @@
-import { createOptions } from './utils'
-import { accept } from '@transformers/accept'
+import { createOptions } from './utils.js'
+import { accept } from '@transformers/accept.js'
 
 test('accept(accept: string): HTTPOptionsTransformer', () => {
   const options = createOptions()

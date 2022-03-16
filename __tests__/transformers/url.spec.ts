@@ -1,5 +1,5 @@
-import { createOptions } from './utils'
-import { url } from '@transformers/url'
+import { createOptions } from './utils.js'
+import { url } from '@transformers/url.js'
 
 test('url(...urls: [string, ...string[]]): HTTPOptionsTransformer', () => {
   const options = createOptions()

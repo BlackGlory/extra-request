@@ -1,6 +1,6 @@
 import { FormData } from 'extra-fetch'
-import { createOptions } from './utils'
-import { formDataField } from '@transformers/form-data-field'
+import { createOptions } from './utils.js'
+import { formDataField } from '@transformers/form-data-field.js'
 
 describe('formDataField(naem: string, value: string | string[] | Blob | ReadableStream | NodeJS.ReadableStream): HTTPOptionsTransformer', () => {
   it('return HTTPOptionsTransformer', () => {

@@ -1,5 +1,5 @@
-import { createOptions } from './utils'
-import { host } from '@transformers/host'
+import { createOptions } from './utils.js'
+import { host } from '@transformers/host.js'
 
 test('host(host: string): HTTPOptionsTransformer', () => {
   const options = createOptions()

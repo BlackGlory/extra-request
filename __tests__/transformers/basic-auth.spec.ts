@@ -1,5 +1,5 @@
-import { createOptions } from './utils'
-import { basicAuth } from '@transformers/basic-auth'
+import { createOptions } from './utils.js'
+import { basicAuth } from '@transformers/basic-auth.js'
 
 test('basicAuth(username: string, password: string): HTTPOptionsTransformer', () => {
   const username = 'user'

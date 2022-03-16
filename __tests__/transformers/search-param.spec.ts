@@ -1,5 +1,5 @@
-import { createOptions } from './utils'
-import { searchParam } from '@transformers/search-param'
+import { createOptions } from './utils.js'
+import { searchParam } from '@transformers/search-param.js'
 
 test(`
   searchParam(name: string, value: string | number): HTTPOptionsTransformer

@@ -1,5 +1,5 @@
 import { Headers, Request } from 'extra-fetch'
-import { IHTTPOptions, IHTTPOptionsTransformer } from '@src/types'
+import { IHTTPOptions, IHTTPOptionsTransformer } from '@src/types.js'
 import { isFunction } from '@blackglory/types'
 import { Falsy } from 'justypes'
 

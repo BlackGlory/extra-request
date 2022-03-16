@@ -1,12 +1,16 @@
 {
   "compilerOptions": {
-    "target": "ES2019"
-  , "module": "CommonJS"
+    "target": "ES2018"
+  , "module": "ES2015"
+  , "moduleResolution": "node"
   , "strict": true
   , "noUnusedLocals": true
   , "noUnusedParameters": true
-  , "experimentalDecorators": true
-  , "emitDecoratorMetadata": false
+  , "esModuleInterop": true
+  , "plugins": [
+      { "transform": "typescript-transform-paths" }
+    , { "transform": "typescript-transform-paths", "afterDeclarations": true }
+    ]
   , "baseUrl": "."
   , "paths": {
       "@src/*": ["src/*"]
