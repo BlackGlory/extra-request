@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [6.0.1](https://github.com/BlackGlory/extra-request/compare/v6.0.0...v6.0.1) (2022-03-16)
+
+
+### Bug Fixes
+
+* pathname ([8b8225a](https://github.com/BlackGlory/extra-request/commit/8b8225a7f16ae496bd5d38aee9563573fd55fbfe))
+
 ## [6.0.0](https://github.com/BlackGlory/extra-request/compare/v5.0.0...v6.0.0) (2022-03-16)
 
 
