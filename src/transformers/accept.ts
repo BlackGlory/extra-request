@@ -1,4 +1,4 @@
-import { appendHeader } from './append-header'
+import { appendHeader } from './append-header.js'
 import { IHTTPOptionsTransformer } from '@src/types.js'
 
 export function accept(accept: string): IHTTPOptionsTransformer {
