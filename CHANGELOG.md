@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.0.0](https://github.com/BlackGlory/extra-request/compare/v5.0.0...v6.0.0) (2022-03-16)
+
+
+### ⚠ BREAKING CHANGES
+
+* It is an ESM now.
+
+* use extra-fetch v3 ([6dce369](https://github.com/BlackGlory/extra-request/commit/6dce369dc06723a9b64ac95fb72befeda146a77e))
+
 ## [5.0.0](https://github.com/BlackGlory/extra-request/compare/v4.0.1...v5.0.0) (2022-02-10)
 
 
