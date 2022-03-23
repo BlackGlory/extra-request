@@ -48,11 +48,11 @@
     "@commitlint/config-conventional": "^16.2.1",
     "@types/jest": "^27.4.1",
     "@types/papaparse": "^5.3.2",
-    "@typescript-eslint/eslint-plugin": "^5.15.0",
-    "@typescript-eslint/parser": "^5.15.0",
+    "@typescript-eslint/eslint-plugin": "^5.16.0",
+    "@typescript-eslint/parser": "^5.16.0",
     "cross-env": "^7.0.3",
     "eslint": "^8.11.0",
-    "extra-fetch": "^3.0.0",
+    "extra-fetch": "^3.0.3",
     "husky": "4",
     "jest": "^28.0.0-alpha.7",
     "npm-run-all": "^4.1.5",
@@ -65,8 +65,8 @@
     "typescript-transform-paths": "^3.3.1"
   },
   "dependencies": {
-    "@blackglory/errors": "^2.2.0",
-    "@blackglory/types": "^1.0.0",
+    "@blackglory/errors": "^2.2.1",
+    "@blackglory/types": "^1.0.1",
     "js-base64": "^3.7.2",
     "justypes": "^2.0.0",
     "papaparse": "^5.3.2"
