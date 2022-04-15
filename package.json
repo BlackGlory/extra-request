@@ -9,8 +9,7 @@
     "Request"
   ],
   "files": [
-    "lib",
-    "dist"
+    "lib"
   ],
   "main": "lib/index.js",
   "exports": {
