@@ -1,6 +1,6 @@
 {
   "name": "extra-request",
-  "version": "6.0.2",
+  "version": "6.0.3",
   "description": "Utilities for Request",
   "type": "module",
   "sideEffects": false,
