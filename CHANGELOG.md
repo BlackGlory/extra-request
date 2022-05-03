@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.0.0](https://github.com/BlackGlory/extra-request/compare/v6.0.3...v7.0.0) (2022-05-03)
+
+
+### ⚠ BREAKING CHANGES
+
+* The exports field changed
+
+* improve exports ([5ea5618](https://github.com/BlackGlory/extra-request/commit/5ea5618a94ddb0ea87cf5d9d60ac0ca7b9ad449c))
+
 ### [6.0.3](https://github.com/BlackGlory/extra-request/compare/v6.0.2...v6.0.3) (2022-04-15)
 
 ### [6.0.2](https://github.com/BlackGlory/extra-request/compare/v6.0.1...v6.0.2) (2022-03-23)
