@@ -1,7 +1,7 @@
 import { pathname } from '@transformers/pathname.js'
 import { createOptions } from './utils.js'
 
-test('pathname(pathname: string): RequestOptionsTransformer', () => {
+test('pathname(pathname: string): HTTPOptionsTransformer', () => {
   const options = createOptions()
 
   const result = pathname('test')(options)

@@ -4,7 +4,7 @@ import { appendSearchParam } from '@transformers/append-search-param.js'
 test(`
   appendSearchParam(
     name: string, value: string | number
-  ): RequestOptionsTransformer
+  ): HTTPOptionsTransformer
 `, () => {
   const options = createOptions()
 

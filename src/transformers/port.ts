@@ -1,7 +1,7 @@
-import { IRequestOptions, IRequestOptionsTransformer } from '@src/types.js'
+import { IHTTPOptions, IHTTPOptionsTransformer } from '@src/types.js'
 
-export function port(port: number): IRequestOptionsTransformer {
-  return (options: IRequestOptions) => {
+export function port(port: number): IHTTPOptionsTransformer {
+  return (options: IHTTPOptions) => {
     const url = new URL(options.url.href)
     url.port = port.toString()
 

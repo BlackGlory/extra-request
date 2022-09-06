@@ -1,7 +1,7 @@
 import { createOptions } from './utils.js'
 import { text } from '@transformers/text.js'
 
-test('text(payload: string): RequestOptionsTransformer', () => {
+test('text(payload: string): HTTPOptionsTransformer', () => {
   const options = createOptions()
 
   const result = text('test')(options)

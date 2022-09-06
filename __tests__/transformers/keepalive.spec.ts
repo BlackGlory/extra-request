@@ -1,7 +1,7 @@
 import { keepalive } from '@transformers/keepalive.js'
 import { createOptions } from './utils.js'
 
-test('keepalive(): RequestOptionsTransformer', () => {
+test('keepalive(): HTTPOptionsTransformer', () => {
   const options = createOptions()
 
   const result = keepalive()(options)
@@ -9,7 +9,7 @@ test('keepalive(): RequestOptionsTransformer', () => {
   expect(result.keepalive).toBe(true)
 })
 
-test('keepalive(val: boolean): RequestOptionsTransformer', () => {
+test('keepalive(val: boolean): HTTPOptionsTransformer', () => {
   const options = createOptions()
 
   const result = keepalive(false)(options)

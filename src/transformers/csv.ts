@@ -1,14 +1,14 @@
 import { Headers } from 'extra-fetch'
-import { IRequestOptions, IRequestOptionsTransformer } from '@src/types.js'
+import { IHTTPOptions, IHTTPOptionsTransformer } from '@src/types.js'
 import papaparse from 'papaparse'
 import { assert } from '@blackglory/errors'
 
 const { unparse } = papaparse
 
-export function csv<T extends object>(payload: T[]): IRequestOptionsTransformer {
+export function csv<T extends object>(payload: T[]): IHTTPOptionsTransformer {
   assert(payload.length > 0, 'payload must be a non-empty array')
 
-  return (options: IRequestOptions) => {
+  return (options: IHTTPOptions) => {
     const headers = new Headers(options.headers)
     headers.set('Content-Type', 'text/csv')
 

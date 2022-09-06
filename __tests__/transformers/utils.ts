@@ -1,9 +1,9 @@
 import { Headers } from 'extra-fetch'
-import { IRequestOptions } from '@src/types.js'
+import { IHTTPOptions } from '@src/types.js'
 
-export function createOptions(): IRequestOptions {
+export function createOptions(): IHTTPOptions {
   return {
-    url: new URL('Request://localhost')
+    url: new URL('http://localhost')
   , headers: new Headers()
   }
 }

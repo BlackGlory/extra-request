@@ -2,7 +2,7 @@ import { createOptions } from './utils.js'
 import { searchParam } from '@transformers/search-param.js'
 
 test(`
-  searchParam(name: string, value: string | number): RequestOptionsTransformer
+  searchParam(name: string, value: string | number): HTTPOptionsTransformer
 `, () => {
   const options = createOptions()
 

@@ -1,6 +1,6 @@
 import { appendHeader } from './append-header.js'
-import { IRequestOptionsTransformer } from '@src/types.js'
+import { IHTTPOptionsTransformer } from '@src/types.js'
 
-export function accept(accept: string): IRequestOptionsTransformer {
+export function accept(accept: string): IHTTPOptionsTransformer {
   return appendHeader('Accept', accept)
 }

@@ -1,12 +1,12 @@
 import { FormData } from 'extra-fetch'
-import { IRequestOptions, IRequestOptionsTransformer } from '@src/types.js'
+import { IHTTPOptions, IHTTPOptionsTransformer } from '@src/types.js'
 import { isArray } from '@blackglory/types'
 
 export function formDataField(
   name: string
 , value: string | string[] | Blob
-): IRequestOptionsTransformer {
-  return (options: IRequestOptions) => {
+): IHTTPOptionsTransformer {
+  return (options: IHTTPOptions) => {
     const formData = options.payload instanceof FormData
       ? cloneFormData(options.payload)
       : new FormData()

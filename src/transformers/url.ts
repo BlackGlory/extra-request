@@ -1,7 +1,7 @@
-import { IRequestOptions, IRequestOptionsTransformer } from '@src/types.js'
+import { IHTTPOptions, IHTTPOptionsTransformer } from '@src/types.js'
 
-export function url(...urls: [string,...string[]]): IRequestOptionsTransformer {
-  return (options: IRequestOptions) => {
+export function url(...urls: [string,...string[]]): IHTTPOptionsTransformer {
+  return (options: IHTTPOptions) => {
     const url = new URL(urls.reduce((acc, cur) => new URL(cur, acc).href))
 
     return {
