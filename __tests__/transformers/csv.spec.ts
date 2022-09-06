@@ -1,7 +1,7 @@
 import { createOptions } from './utils.js'
 import { csv } from '@transformers/csv.js'
 
-test('csv<T extends object>(payload: T[]): HTTPOptionsTransformer', () => {
+test('csv<T extends object>(payload: T[]): RequestOptionsTransformer', () => {
   const options = createOptions()
   const payload = [
     { key: 'hello', value: 'world' }

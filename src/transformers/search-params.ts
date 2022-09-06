@@ -1,9 +1,9 @@
-import { IHTTPOptions, IHTTPOptionsTransformer } from '@src/types.js'
+import { IRequestOptions, IRequestOptionsTransformer } from '@src/types.js'
 
 export function searchParams(
   searchParams: { [name: string]: string | number }
-): IHTTPOptionsTransformer {
-  return (options: IHTTPOptions) => {
+): IRequestOptionsTransformer {
+  return (options: IRequestOptions) => {
     const url = new URL(options.url.href)
     const newSearchParams = new URLSearchParams(url.searchParams)
     for (const [name, value] of Object.entries(searchParams)) {

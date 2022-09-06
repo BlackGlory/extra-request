@@ -4,7 +4,7 @@ import { searchParams } from '@transformers/search-params.js'
 test(`
   searchParams(
     searchParams: { [name: string]: string | number }
-  ): HTTPOptionsTransformer
+  ): RequestOptionsTransformer
 `, () => {
   const options = createOptions()
 

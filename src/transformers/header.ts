@@ -1,8 +1,8 @@
 import { Headers } from 'extra-fetch'
-import { IHTTPOptions, IHTTPOptionsTransformer } from '@src/types.js'
+import { IRequestOptions, IRequestOptionsTransformer } from '@src/types.js'
 
-export function header(name: string, value: string): IHTTPOptionsTransformer {
-  return (options: IHTTPOptions) => {
+export function header(name: string, value: string): IRequestOptionsTransformer {
+  return (options: IRequestOptions) => {
     const headers = new Headers(options.headers)
     headers.set(name, value)
 

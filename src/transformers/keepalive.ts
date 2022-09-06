@@ -1,7 +1,7 @@
-import { IHTTPOptionsTransformer, IHTTPOptions } from '@src/types.js'
+import { IRequestOptionsTransformer, IRequestOptions } from '@src/types.js'
 
-export function keepalive(val: boolean = true): IHTTPOptionsTransformer {
-  return (options: IHTTPOptions) => {
+export function keepalive(val: boolean = true): IRequestOptionsTransformer {
+  return (options: IRequestOptions) => {
     return {
       ...options
     , keepalive: val

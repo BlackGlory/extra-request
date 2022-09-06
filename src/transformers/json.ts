@@ -1,8 +1,8 @@
 import { Headers } from 'extra-fetch'
-import { IHTTPOptions, IHTTPOptionsTransformer } from '@src/types.js'
+import { IRequestOptions, IRequestOptionsTransformer } from '@src/types.js'
 
-export function json(payload: any): IHTTPOptionsTransformer {
-  return (options: IHTTPOptions) => {
+export function json(payload: any): IRequestOptionsTransformer {
+  return (options: IRequestOptions) => {
     const headers = new Headers(options.headers)
     headers.set('Content-Type', 'application/json')
 

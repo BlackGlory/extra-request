@@ -1,7 +1,7 @@
-import { IHTTPOptions, IHTTPOptionsTransformer } from '@src/types.js'
+import { IRequestOptions, IRequestOptionsTransformer } from '@src/types.js'
 
-export function signal(signal: AbortSignal): IHTTPOptionsTransformer {
-  return (options: IHTTPOptions) => {
+export function signal(signal: AbortSignal): IRequestOptionsTransformer {
+  return (options: IRequestOptions) => {
     return {
       ...options
     , signal

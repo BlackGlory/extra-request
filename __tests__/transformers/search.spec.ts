@@ -1,7 +1,7 @@
 import { createOptions } from './utils.js'
 import { search } from '@transformers/search.js'
 
-test('search(search: string): HTTPOptionsTransformer', () => {
+test('search(search: string): RequestOptionsTransformer', () => {
   const options = createOptions()
 
   const result = search('param=value')(options)

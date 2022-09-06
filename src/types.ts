@@ -1,6 +1,6 @@
-export type IHTTPOptionsTransformer = (options: IHTTPOptions) => IHTTPOptions
+export type IRequestOptionsTransformer = (options: IRequestOptions) => IRequestOptions
 
-export interface IHTTPOptions {
+export interface IRequestOptions {
   url: URL
   headers: Headers
   payload?: string | FormData

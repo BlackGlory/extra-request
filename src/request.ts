@@ -1,38 +1,38 @@
 import { Headers, Request } from 'extra-fetch'
-import { IHTTPOptions, IHTTPOptionsTransformer } from '@src/types.js'
+import { IRequestOptions, IRequestOptionsTransformer } from '@src/types.js'
 import { isFunction } from '@blackglory/types'
 import { Falsy } from 'justypes'
 
-export function get(...transformers: Array<IHTTPOptionsTransformer | Falsy>): Request {
+export function get(...transformers: Array<IRequestOptionsTransformer | Falsy>): Request {
   return request('GET', ...transformers)
 }
 
-export function head(...transformers: Array<IHTTPOptionsTransformer | Falsy>): Request {
+export function head(...transformers: Array<IRequestOptionsTransformer | Falsy>): Request {
   return request('HEAD', ...transformers)
 }
 
-export function post(...transformers: Array<IHTTPOptionsTransformer | Falsy>): Request {
+export function post(...transformers: Array<IRequestOptionsTransformer | Falsy>): Request {
   return request('POST', ...transformers)
 }
 
-export function put(...transformers: Array<IHTTPOptionsTransformer | Falsy>): Request {
+export function put(...transformers: Array<IRequestOptionsTransformer | Falsy>): Request {
   return request('PUT', ...transformers)
 }
 
-export function patch(...transformers: Array<IHTTPOptionsTransformer | Falsy>): Request {
+export function patch(...transformers: Array<IRequestOptionsTransformer | Falsy>): Request {
   return request('PATCH', ...transformers)
 }
 
-export function del(...transformers: Array<IHTTPOptionsTransformer | Falsy>): Request {
+export function del(...transformers: Array<IRequestOptionsTransformer | Falsy>): Request {
   return request('DELETE', ...transformers)
 }
 
 function request(
   method: 'GET' | 'HEAD' | 'PUT' | 'POST' | 'PATCH' | 'DELETE'
-, ...transformers: Array<IHTTPOptionsTransformer | Falsy>
+, ...transformers: Array<IRequestOptionsTransformer | Falsy>
 ): Request {
-  const options: IHTTPOptions = transformers.reduce<IHTTPOptions>(
-    (options, trans) => isFunction(trans) ? trans(options) : options
+  const options: IRequestOptions = transformers.reduce<IRequestOptions>(
+    (options, transformer) => isFunction(transformer) ? transformer(options) : options
   , {
       url: new URL('http://localhost')
     , headers: new Headers()
