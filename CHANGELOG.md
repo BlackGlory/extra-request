@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [7.1.0](https://github.com/BlackGlory/extra-request/compare/v7.0.2...v7.1.0) (2022-09-06)
+
+
+### Features
+
+* export `pipeRequestOptionsTransformers` ([2ddc4c5](https://github.com/BlackGlory/extra-request/commit/2ddc4c5b7b08e9c4528fe1c8c5ffb503135e56e0))
+
 ### [7.0.2](https://github.com/BlackGlory/extra-request/compare/v7.0.1...v7.0.2) (2022-06-09)
 
 ### [7.0.1](https://github.com/BlackGlory/extra-request/compare/v7.0.0...v7.0.1) (2022-05-03)
