@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [8.0.0](https://github.com/BlackGlory/extra-request/compare/v7.1.1...v8.0.0) (2022-09-06)
+
+
+### ⚠ BREAKING CHANGES
+
+* - `IHTTPOptions` => `IRequestOptions`
+- `IHTTPOptionsTransformer` => `IRequestOptionsTransformer`
+
+### Features
+
+* add `pipeRequestOptionsTransformers` ([3a14a26](https://github.com/BlackGlory/extra-request/commit/3a14a26cbffedddcc7fc3eccf4f64d8604e1a916))
+
+
+* rename ([c5cbde5](https://github.com/BlackGlory/extra-request/commit/c5cbde590f38f00736eb62b6c9ddfd08cb3c043c))
+
 ### [7.1.1](https://github.com/BlackGlory/extra-request/compare/v7.1.0...v7.1.1) (2022-09-06)
 
 ## [7.1.0](https://github.com/BlackGlory/extra-request/compare/v7.0.2...v7.1.0) (2022-09-06)
