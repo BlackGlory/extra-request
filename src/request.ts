@@ -1,6 +1,6 @@
 import { Headers, Request } from 'extra-fetch'
-import { IRequestOptionsTransformer } from '@src/types.js'
-import { pipeRequestOptionsTransformers } from '@src/pipe-request-options-transformers.js'
+import { IRequestOptions, IRequestOptionsTransformer } from '@src/types.js'
+import { isFunction } from '@blackglory/types'
 import { Falsy } from 'justypes'
 
 export function get(...transformers: Array<IRequestOptionsTransformer | Falsy>): Request {
@@ -31,14 +31,21 @@ function request(
   method: 'GET' | 'HEAD' | 'PUT' | 'POST' | 'PATCH' | 'DELETE'
 , ...transformers: Array<IRequestOptionsTransformer | Falsy>
 ): Request {
-  const requestOptions = pipeRequestOptionsTransformers(...transformers)
-  const headers = new Headers(requestOptions.headers)
+  const options: IRequestOptions = transformers.reduce<IRequestOptions>(
+    (options, transformer) => isFunction(transformer) ? transformer(options) : options
+  , {
+      url: new URL('http://localhost')
+    , headers: new Headers()
+    }
+  )
 
-  return new Request(requestOptions.url.href, {
+  const headers = new Headers(options.headers)
+
+  return new Request(options.url.href, {
     method
   , headers
-  , signal: requestOptions.signal
-  , body: requestOptions.payload
-  , keepalive: requestOptions.keepalive
+  , signal: options.signal
+  , body: options.payload
+  , keepalive: options.keepalive
   })
 }
