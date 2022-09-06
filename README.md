@@ -21,106 +21,106 @@ const res = await fetch(req)
 ```
 
 ## API
-```
-interface IHTTPOptions {
+```ts
+interface IRequestOptions {
   url?: URL
   headers?: Headers
   payload?: string | FormData
   signal?: AbortSignal
 }
 
-type IHTTPOptionsTransformer = (options: IHTTPOptions) => HTTPOptions
+type IRequestOptionsTransformer = (options: IRequestOptions) => RequestOptions
 ```
 
 ### get
 ```ts
-function get(...transformers: Array<IHTTPOptionsTransformer | Falsy>): Request
+function get(...transformers: Array<IRequestOptionsTransformer | Falsy>): Request
 ```
 
 ### head
 ```ts
-function head(...transformers: Array<IHTTPOptionsTransformer | Falsy>: Request
+function head(...transformers: Array<IRequestOptionsTransformer | Falsy>: Request
 ```
 
 ### post
 ```ts
-function post(...transformers: Array<IHTTPOptionsTransformer | Falsy>): Request
+function post(...transformers: Array<IRequestOptionsTransformer | Falsy>): Request
 ```
 
 ### put
 ```ts
-function put(...transformers: Array<IHTTPOptionsTransformer | Falsy>): Request
+function put(...transformers: Array<IRequestOptionsTransformer | Falsy>): Request
 ```
 
 ### patch
 ```ts
-function patch(...transformers: Array<IHTTPOptionsTransformer | Falsy>): Request
+function patch(...transformers: Array<IRequestOptionsTransformer | Falsy>): Request
 ```
 
 ### del
 ```ts
-function del(...transformers: Array<IHTTPOptionsTrransformer | Falsy>): Request
+function del(...transformers: Array<IRequestOptionsTrransformer | Falsy>): Request
 ```
 
 ### Transformers
 #### url
 ```ts
-function url(...urls: [string, ...string[]]): IHTTPOptionsTransformer
+function url(...urls: [string, ...string[]]): IRequestOptionsTransformer
 ```
 
 ### text
 ```ts
-function text(payload: string): IHTTPOptionsTransformer
+function text(payload: string): IRequestOptionsTransformer
 ```
 
 ### json
 ```ts
-function json(payload: Json): IHTTPOptionsTransformer
+function json(payload: Json): IRequestOptionsTransformer
 ```
 
 ### csv
 ```ts
-function csv<T extends object>(payload: T[]): IHTTPOptionsTransformer
+function csv<T extends object>(payload: T[]): IRequestOptionsTransformer
 ```
 
 ### signal
 ```ts
-function signal(signal: AbortSignal): IHTTPOptionsTransformer
+function signal(signal: AbortSignal): IRequestOptionsTransformer
 ```
 
 ### header
 ```ts
-function header(name: string, value: string): IHTTPOptionsTransformer
+function header(name: string, value: string): IRequestOptionsTransformer
 ```
 
 ### appendHeader
 ```ts
-function appendHeader(name: string, value: string): IHTTPOptionsTransformer
+function appendHeader(name: string, value: string): IRequestOptionsTransformer
 ```
 
 ### headers
 ```ts
-function headers(headers: { [name: string]: string }): IHTTPOptionsTransformer
+function headers(headers: { [name: string]: string }): IRequestOptionsTransformer
 ```
 
 ### host
 ```ts
-function host(host: string): IHTTPOptionsTransformer
+function host(host: string): IRequestOptionsTransformer
 ```
 
 ### port
 ```ts
-function port(port: number): IHTTPOptionsTransformer
+function port(port: number): IRequestOptionsTransformer
 ```
 
 ### pathname
 ```ts
-function pathname(pathname: string): IHTTPOptionsTransformer
+function pathname(pathname: string): IRequestOptionsTransformer
 ```
 
 ### search
 ```ts
-function search(search: string): IHTTPOptionsTransformer
+function search(search: string): IRequestOptionsTransformer
 ```
 
 ### searchParam
@@ -128,7 +128,7 @@ function search(search: string): IHTTPOptionsTransformer
 function searchParam(
   name: string
 , value: string | number
-): IHTTPOptionsTransformer
+): IRequestOptionsTransformer
 ```
 
 ### appendSearchParam
@@ -136,14 +136,14 @@ function searchParam(
 function appendSearchParam(
   name: string
 , value: string | number
-): IHTTPOptionsTransformer
+): IRequestOptionsTransformer
 ```
 
 ### searchParams
 ```ts
 function searchParams(
   searchParams: { [name: string]: string | number }
-): IHTTPOptionsTransformer
+): IRequestOptionsTransformer
 ```
 
 ### formDataField
@@ -151,20 +151,20 @@ function searchParams(
 function formDataField(
   name: string
 , value: string | string[] | Blob
-): IHTTPOptionsTransformer
+): IRequestOptionsTransformer
 ```
 
 ### basicAuth
 ```ts
-function basicAuth(username: string, password: string): IHTTPOptionsTransformer
+function basicAuth(username: string, password: string): IRequestOptionsTransformer
 ```
 
 ### bearerAuth
 ```ts
-function bearerAuth(token: string): IHTTPOptionsTransformer
+function bearerAuth(token: string): IRequestOptionsTransformer
 ```
 
 ### keepalive
 ```ts
-function keepalive(val: boolean = true): IHTTPOptionsTransformer
+function keepalive(val: boolean = true): IRequestOptionsTransformer
 ```

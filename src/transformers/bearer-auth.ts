@@ -1,6 +1,6 @@
 import { header } from './header.js'
-import { IHTTPOptionsTransformer } from '@src/types.js'
+import { IRequestOptionsTransformer } from '@src/types.js'
 
-export function bearerAuth(token: string): IHTTPOptionsTransformer {
+export function bearerAuth(token: string): IRequestOptionsTransformer {
   return header('Authorization', `Bearer ${token}`)
 }

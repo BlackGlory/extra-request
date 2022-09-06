@@ -1,7 +1,7 @@
 import { createOptions } from './utils.js'
 import { appendHeader } from '@transformers/append-header.js'
 
-test('appendHeader(name: string, value: string): HTTPOptionsTransformer', () => {
+test('appendHeader(name: string, value: string): RequestOptionsTransformer', () => {
   const options = createOptions()
 
   let result = appendHeader('Content-Type', 'text/plain')(options)

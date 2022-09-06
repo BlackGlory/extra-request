@@ -1,7 +1,7 @@
 import { createOptions } from './utils.js'
 import { bearerAuth } from '@transformers/bearer-auth.js'
 
-test('bearerAuth(token: string): HTTPOptionsTransformer', () => {
+test('bearerAuth(token: string): RequestOptionsTransformer', () => {
   const token = 'token'
   const options = createOptions()
 
