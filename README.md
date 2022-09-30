@@ -11,7 +11,7 @@ yarn add extra-request
 ## Usage
 ```ts
 import { post } from 'extra-request'
-import { url, json } from 'extra-request/lib/transformers'
+import { url, json } from 'extra-request/transformers'
 
 const req = post(
   url('http://example.com')
