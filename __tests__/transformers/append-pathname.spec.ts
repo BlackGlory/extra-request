@@ -5,7 +5,7 @@ describe('appendPathname', () => {
   test('url does not end with slash', () => {
     const options = createOptions({ pathname: '/pathname' })
 
-    const result = appendPathname('test')(options)
+    const result = appendPathname('/test')(options)
 
     expect(result.url.pathname).toBe('/pathname/test')
   })
@@ -13,7 +13,7 @@ describe('appendPathname', () => {
   test('url ends with slash', () => {
     const options = createOptions({ pathname: '/pathname/' })
 
-    const result = appendPathname('test')(options)
+    const result = appendPathname('/test')(options)
 
     expect(result.url.pathname).toBe('/pathname/test')
   })

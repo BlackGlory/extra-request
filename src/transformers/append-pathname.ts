@@ -4,21 +4,16 @@ import { go } from '@blackglory/prelude'
 export function appendPathname(pathname: string): IRequestOptionsTransformer {
   return (options: IRequestOptions) => {
     const base = go(() => {
-      const directoryPathname = go(() => {
-        let pathname = options.url.pathname
-        if (!options.url.pathname.endsWith('/')) {
-          pathname += '/'
-        }
-        return pathname
-      })
-
       const url = new URL(options.url.href)
-      url.pathname = directoryPathname
+      url.pathname = url.pathname.endsWith('/') ? url.pathname : `${url.pathname}/`
 
       return url
     })
 
-    const url = new URL(pathname, base)
+    const url = new URL(
+      pathname.replace(/^\/*/, '')
+    , base
+    )
 
     return {
       ...options
