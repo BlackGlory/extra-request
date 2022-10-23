@@ -1,7 +1,7 @@
 import { Headers, Request } from 'extra-fetch'
 import { IRequestOptionsTransformer } from '@src/types.js'
 import { pipeRequestOptionsTransformers } from '@src/pipe-request-options-transformers.js'
-import { Falsy } from 'justypes'
+import { Falsy } from '@blackglory/prelude'
 
 export function get(...transformers: Array<IRequestOptionsTransformer | Falsy>): Request {
   return request('GET', ...transformers)

@@ -1,7 +1,7 @@
 import { Headers } from 'extra-fetch'
 import { IRequestOptions, IRequestOptionsTransformer } from '@src/types.js'
-import { isFunction } from '@blackglory/types'
-import { Falsy } from 'justypes'
+import { isFunction } from '@blackglory/prelude'
+import { Falsy } from '@blackglory/prelude'
 
 export function pipeRequestOptionsTransformers(
   ...transformers: Array<IRequestOptionsTransformer | Falsy>

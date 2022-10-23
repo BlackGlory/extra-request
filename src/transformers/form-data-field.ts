@@ -1,6 +1,6 @@
 import { FormData } from 'extra-fetch'
 import { IRequestOptions, IRequestOptionsTransformer } from '@src/types.js'
-import { isArray } from '@blackglory/types'
+import { isArray } from '@blackglory/prelude'
 
 export function formDataField(
   name: string

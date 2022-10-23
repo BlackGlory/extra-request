@@ -1,7 +1,7 @@
 import { Headers } from 'extra-fetch'
 import { IRequestOptions, IRequestOptionsTransformer } from '@src/types.js'
 import papaparse from 'papaparse'
-import { assert } from '@blackglory/errors'
+import { assert } from '@blackglory/prelude'
 
 const { unparse } = papaparse
 
