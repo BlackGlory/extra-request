@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.1.0](https://github.com/BlackGlory/extra-request/compare/v4.0.3...v4.1.0) (2022-10-23)
+
+
+### Features
+
+* add `appendPathname` ([0c9dd69](https://github.com/BlackGlory/extra-request/commit/0c9dd6906d1b87bcce2e2b8bd87b37a9d534aac3))
+
 ### [4.0.3](https://github.com/BlackGlory/extra-request/compare/v4.0.2...v4.0.3) (2022-05-03)
 
 ### [4.0.2](https://github.com/BlackGlory/extra-request/compare/v4.0.1...v4.0.2) (2022-03-23)
