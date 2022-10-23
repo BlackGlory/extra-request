@@ -1,6 +1,6 @@
 import { FormData } from 'extra-fetch'
 import { IHTTPOptions, IHTTPOptionsTransformer } from '@src/types'
-import { isArray } from '@blackglory/types'
+import { isArray } from '@blackglory/prelude'
 
 export function formDataField(
   name: string

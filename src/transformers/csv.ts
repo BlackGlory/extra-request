@@ -1,7 +1,7 @@
 import { Headers } from 'extra-fetch'
 import { IHTTPOptions, IHTTPOptionsTransformer } from '@src/types'
 import { unparse } from 'papaparse'
-import { assert } from '@blackglory/errors'
+import { assert } from '@blackglory/prelude'
 
 export function csv<T extends object>(payload: T[]): IHTTPOptionsTransformer {
   assert(payload.length > 0, 'payload must be a non-empty array')

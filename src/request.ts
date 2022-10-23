@@ -1,7 +1,7 @@
 import { Headers, Request } from 'extra-fetch'
 import { IHTTPOptions, IHTTPOptionsTransformer } from '@src/types'
-import { isFunction } from '@blackglory/types'
-import { Falsy } from 'justypes'
+import { isFunction } from '@blackglory/prelude'
+import { Falsy } from '@blackglory/prelude'
 
 export function get(...transformers: Array<IHTTPOptionsTransformer | Falsy>): Request {
   return request('GET', ...transformers)
