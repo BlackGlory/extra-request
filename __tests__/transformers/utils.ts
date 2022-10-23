@@ -1,9 +1,18 @@
 import { Headers } from 'extra-fetch'
 import { IHTTPOptions } from '@src/types'
 
-export function createOptions(): IHTTPOptions {
+export function createOptions(
+  { pathname }: {
+    pathname?: string
+  } = {}
+): IHTTPOptions {
+  const url = new URL('protocol://localhost')
+  if (pathname) {
+    url.pathname = pathname
+  }
+
   return {
-    url: new URL('http://localhost')
+    url
   , headers: new Headers()
   }
 }
