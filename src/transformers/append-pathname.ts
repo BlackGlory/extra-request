@@ -5,7 +5,9 @@ export function appendPathname(pathname: string): IHTTPOptionsTransformer {
   return (options: IHTTPOptions) => {
     const base = go(() => {
       const url = new URL(options.url.href)
-      url.pathname = url.pathname.endsWith('/') ? url.pathname : `${url.pathname}/`
+      url.pathname = url.pathname.endsWith('/')
+                   ? url.pathname
+                   : `${url.pathname}/`
 
       return url
     })
@@ -14,6 +16,8 @@ export function appendPathname(pathname: string): IHTTPOptionsTransformer {
       pathname.replace(/^\/*/, '')
     , base
     )
+    url.search = base.search
+    url.hash = base.hash
 
     return {
       ...options
