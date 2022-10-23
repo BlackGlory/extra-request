@@ -18,6 +18,7 @@ test('exports', () => {
   , 'host'
   , 'port'
   , 'pathname'
+  , 'appendPathname'
   , 'search'
   , 'searchParam'
   , 'appendSearchParam'

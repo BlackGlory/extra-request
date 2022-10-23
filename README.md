@@ -125,6 +125,11 @@ function port(port: number): IRequestOptionsTransformer
 function pathname(pathname: string): IRequestOptionsTransformer
 ```
 
+### appendPathname
+```ts
+function appendPathname(pathname: string): IRequestOptionsTransformer
+```
+
 ### search
 ```ts
 function search(search: string): IRequestOptionsTransformer
