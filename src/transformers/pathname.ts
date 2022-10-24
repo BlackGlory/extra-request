@@ -1,13 +1,11 @@
 import { IRequestOptions, IRequestOptionsTransformer } from '@src/types.js'
+import { setPathname } from 'url-operator'
 
 export function pathname(pathname: string): IRequestOptionsTransformer {
   return (options: IRequestOptions) => {
-    const url = new URL(options.url.href)
-    url.pathname = pathname
-
     return {
       ...options
-    , url
+    , url: setPathname(options.url, pathname)
     }
   }
 }

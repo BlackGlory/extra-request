@@ -1,13 +1,11 @@
 import { IRequestOptions, IRequestOptionsTransformer } from '@src/types.js'
+import { setPort } from 'url-operator'
 
 export function port(port: number): IRequestOptionsTransformer {
   return (options: IRequestOptions) => {
-    const url = new URL(options.url.href)
-    url.port = port.toString()
-
     return {
       ...options
-    , url
+    , url: setPort(options.url, port)
     }
   }
 }

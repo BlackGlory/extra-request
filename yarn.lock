@@ -4932,6 +4932,13 @@ uri-js@^4.2.2:
   dependencies:
     punycode "^2.1.0"
 
+url-operator@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/url-operator/-/url-operator-0.1.0.tgz#46e4a206f2d8278c8ce62080fbf9e09b6b9e230e"
+  integrity sha512-71kdWZQUTZaTSd95T2RpJaAw75FwFfB1Nu8547OUKKhWhgVll66foJuI4xkkM7xMe0p/sqZxvBnft5FReU0LGQ==
+  dependencies:
+    "@blackglory/prelude" "^0.1.5"
+
 util-deprecate@^1.0.1, util-deprecate@~1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"

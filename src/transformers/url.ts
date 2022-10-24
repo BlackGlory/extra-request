@@ -1,12 +1,13 @@
 import { IRequestOptions, IRequestOptionsTransformer } from '@src/types.js'
 
-export function url(...urls: [string,...string[]]): IRequestOptionsTransformer {
+export function url(url: string, ...baseUrls: string[]): IRequestOptionsTransformer {
   return (options: IRequestOptions) => {
-    const url = new URL(urls.reduce((acc, cur) => new URL(cur, acc).href))
+    const urls = [url, ...baseUrls]
+    const newURL = new URL(urls.reduce((acc, cur) => new URL(cur, acc).href))
 
     return {
       ...options
-    , url
+    , url: newURL
     }
   }
 }

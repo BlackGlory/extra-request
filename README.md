@@ -72,7 +72,7 @@ function pipeRequestOptionsTransformers(
 ### Transformers
 #### url
 ```ts
-function url(...urls: [string, ...string[]]): IRequestOptionsTransformer
+function url(url: string, ...baseUrls: string[]): IRequestOptionsTransformer
 ```
 
 ### text
@@ -154,7 +154,7 @@ function appendSearchParam(
 ### searchParams
 ```ts
 function searchParams(
-  searchParams: { [name: string]: string | number }
+  searchParams: Record<string, string | number>
 ): IRequestOptionsTransformer
 ```
 
