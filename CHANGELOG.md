@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [8.1.4](https://github.com/BlackGlory/extra-request/compare/v8.1.3...v8.1.4) (2022-11-01)
+
 ### [8.1.3](https://github.com/BlackGlory/extra-request/compare/v8.1.2...v8.1.3) (2022-10-24)
 
 ### [8.1.2](https://github.com/BlackGlory/extra-request/compare/v8.1.1...v8.1.2) (2022-10-23)
