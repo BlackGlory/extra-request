@@ -64,6 +64,7 @@
   "dependencies": {
     "@blackglory/prelude": "^0.3.1",
     "extra-utils": "^5.1.0",
+    "justypes": "^4.1.0",
     "papaparse": "^5.4.0",
     "url-operator": "^0.3.0"
   },

@@ -82,7 +82,9 @@ function text(payload: string): IRequestOptionsTransformer
 
 ### json
 ```ts
-function json(payload: Json): IRequestOptionsTransformer
+function json<T extends JSONValue | JSONSerializable<any>>(
+  payload: T
+): IRequestOptionsTransformer
 ```
 
 ### csv
