@@ -11,7 +11,7 @@ describe('formDataField(naem: string, value: string | string[] | Blob | Readable
     expect(result.payload).toBeInstanceOf(FormData)
   })
 
-  describe('value is array', () => {
+  test('value is array', () => {
     const options = createOptions()
 
     const result = formDataField('name', ['value1', 'value2'])(options)

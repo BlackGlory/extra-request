@@ -1,5 +1,5 @@
 import { IRequestOptions, IRequestOptionsTransformer } from '@src/types.js'
-import URL from 'url-operator'
+import * as URL from 'url-operator'
 
 export function appendSearchParam(
   name: string

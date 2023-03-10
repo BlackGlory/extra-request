@@ -27,9 +27,7 @@
   "scripts": {
     "prepare": "ts-patch install -s",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx --quiet src __tests__",
-    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --runInBand --config jest.config.js",
-    "test:debug": "cross-env NODE_OPTIONS=--experimental-vm-modules node --inspect-brk node_modules/.bin/jest --runInBand",
-    "test:coverage": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --runInBand --coverage --config jest.config.js",
+    "test": "vitest --run",
     "prepublishOnly": "run-s clean build",
     "clean": "rimraf lib",
     "build": "tsc --project tsconfig.build.json",
@@ -37,39 +35,37 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "run-s prepare lint test build",
+      "pre-commit": "run-s prepare lint build test",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "devDependencies": {
-    "@blackglory/jest-resolver": "^0.3.0",
-    "@commitlint/cli": "^17.4.2",
-    "@commitlint/config-conventional": "^17.4.2",
-    "@types/jest": "^29.2.6",
+    "@commitlint/cli": "^17.4.4",
+    "@commitlint/config-conventional": "^17.4.4",
     "@types/papaparse": "^5.3.7",
-    "@typescript-eslint/eslint-plugin": "^5.48.2",
-    "@typescript-eslint/parser": "^5.48.2",
+    "@typescript-eslint/eslint-plugin": "^5.54.1",
+    "@typescript-eslint/parser": "^5.54.1",
     "cross-env": "^7.0.3",
-    "eslint": "^8.32.0",
-    "extra-fetch": "^4.0.2",
-    "extra-filesystem": "^0.4.8",
+    "eslint": "^8.35.0",
+    "extra-fetch": "^4.0.4",
+    "extra-filesystem": "^0.4.10",
     "husky": "4",
-    "jest": "^29.3.1",
-    "jest-resolve": "^29.3.1",
     "npm-run-all": "^4.1.5",
-    "rimraf": "^4.1.1",
+    "rimraf": "^4.4.0",
     "standard-version": "^9.5.0",
-    "ts-jest": "^29.0.5",
     "ts-patch": "^2.1.0",
-    "tslib": "^2.4.1",
-    "typescript": "^4.8.4",
-    "typescript-transform-paths": "^3.4.6"
+    "tslib": "^2.5.0",
+    "typescript": "4.8",
+    "typescript-transform-paths": "^3.4.6",
+    "vite": "^4.1.4",
+    "vite-tsconfig-paths": "^4.0.5",
+    "vitest": "^0.29.2"
   },
   "dependencies": {
-    "@blackglory/prelude": "^0.2.2",
-    "extra-utils": "^4.0.1",
-    "papaparse": "^5.3.2",
-    "url-operator": "^0.1.0"
+    "@blackglory/prelude": "^0.3.1",
+    "extra-utils": "^5.1.0",
+    "papaparse": "^5.4.0",
+    "url-operator": "^0.3.0"
   },
   "peerDependencies": {
     "extra-fetch": "^3.0.0 || ^4.0.0"
