@@ -77,69 +77,69 @@ function pipeRequestOptionsTransformers(
 function url(url: string, ...baseUrls: string[]): IRequestOptionsTransformer
 ```
 
-### text
+#### text
 ```ts
 function text(payload: string): IRequestOptionsTransformer
 ```
 
-### json
+#### json
 ```ts
 function json<T extends JSONValue | JSONSerializable<any>>(
   payload: T
 ): IRequestOptionsTransformer
 ```
 
-### csv
+#### csv
 ```ts
 function csv<T extends object>(payload: T[]): IRequestOptionsTransformer
 ```
 
-### signal
+#### signal
 ```ts
 function signal(signal: AbortSignal): IRequestOptionsTransformer
 ```
 
-### header
+#### header
 ```ts
 function header(name: string, value: string): IRequestOptionsTransformer
 ```
 
-### appendHeader
+#### appendHeader
 ```ts
 function appendHeader(name: string, value: string): IRequestOptionsTransformer
 ```
 
-### headers
+#### headers
 ```ts
 function headers(headers: { [name: string]: string }): IRequestOptionsTransformer
 ```
 
-### host
+#### host
 ```ts
 function host(host: string): IRequestOptionsTransformer
 ```
 
-### port
+#### port
 ```ts
 function port(port: number): IRequestOptionsTransformer
 ```
 
-### pathname
+#### pathname
 ```ts
 function pathname(pathname: string): IRequestOptionsTransformer
 ```
 
-### appendPathname
+#### appendPathname
 ```ts
 function appendPathname(pathname: string): IRequestOptionsTransformer
 ```
 
-### search
+#### search
 ```ts
 function search(search: string): IRequestOptionsTransformer
 ```
 
-### searchParam
+#### searchParam
 ```ts
 function searchParam(
   name: string
@@ -147,7 +147,7 @@ function searchParam(
 ): IRequestOptionsTransformer
 ```
 
-### appendSearchParam
+#### appendSearchParam
 ```ts
 function appendSearchParam(
   name: string
@@ -155,14 +155,14 @@ function appendSearchParam(
 ): IRequestOptionsTransformer
 ```
 
-### searchParams
+#### searchParams
 ```ts
 function searchParams(
   searchParams: Record<string, string | number>
 ): IRequestOptionsTransformer
 ```
 
-### formDataField
+#### formDataField
 ```ts
 function formDataField(
   name: string
@@ -170,22 +170,22 @@ function formDataField(
 ): IRequestOptionsTransformer
 ```
 
-### basicAuth
+#### basicAuth
 ```ts
 function basicAuth(username: string, password: string): IRequestOptionsTransformer
 ```
 
-### bearerAuth
+#### bearerAuth
 ```ts
 function bearerAuth(token: string): IRequestOptionsTransformer
 ```
 
-### keepalive
+#### keepalive
 ```ts
 function keepalive(val: boolean = true): IRequestOptionsTransformer
 ```
 
-### redirect
+#### redirect
 ```ts
 function redirect(val: RequestRedirect): IRequestOptionsTransformer
 ```
