@@ -27,6 +27,8 @@ interface IRequestOptions {
   headers?: Headers
   payload?: string | FormData
   signal?: AbortSignal
+  keepalive?: boolean
+  redirect?: RequestRedirect
 }
 
 type IRequestOptionsTransformer = (options: IRequestOptions) => RequestOptions
@@ -181,4 +183,9 @@ function bearerAuth(token: string): IRequestOptionsTransformer
 ### keepalive
 ```ts
 function keepalive(val: boolean = true): IRequestOptionsTransformer
+```
+
+### redirect
+```ts
+function redirect(val: RequestRedirect): IRequestOptionsTransformer
 ```

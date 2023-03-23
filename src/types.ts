@@ -6,4 +6,5 @@ export interface IRequestOptions {
   payload?: string | FormData
   signal?: AbortSignal
   keepalive?: boolean
+  redirect?: RequestRedirect
 }

@@ -8,8 +8,6 @@ test('exports', () => {
   , 'json'
   , 'csv'
 
-  , 'signal'
-
   , 'header'
   , 'appendHeader'
   , 'headers'
@@ -29,7 +27,9 @@ test('exports', () => {
   , 'basicAuth'
   , 'bearerAuth'
 
+  , 'signal'
   , 'keepalive'
+  , 'redirect'
   ].sort()
 
   const actualExports = Object.keys(target).sort()

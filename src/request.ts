@@ -40,5 +40,6 @@ function request(
   , signal: requestOptions.signal
   , body: requestOptions.payload
   , keepalive: requestOptions.keepalive
+  , redirect: requestOptions.redirect
   })
 }

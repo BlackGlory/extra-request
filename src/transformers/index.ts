@@ -4,8 +4,6 @@ export * from '@transformers/text.js'
 export * from '@transformers/json.js'
 export * from '@transformers/csv.js'
 
-export * from '@transformers/signal.js'
-
 export * from '@transformers/header.js'
 export * from '@transformers/append-header.js'
 export * from '@transformers/headers.js'
@@ -25,4 +23,6 @@ export * from '@transformers/form-data-field.js'
 export * from '@transformers/basic-auth.js'
 export * from '@transformers/bearer-auth.js'
 
+export * from '@transformers/signal.js'
 export * from '@transformers/keepalive.js'
+export * from '@transformers/redirect.js'
