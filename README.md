@@ -189,3 +189,8 @@ function keepalive(val: boolean = true): IRequestOptionsTransformer
 ```ts
 function redirect(val: RequestRedirect): IRequestOptionsTransformer
 ```
+
+#### body
+```ts
+function body(val: BodyInit): IRequestOptionsTransformer
+```

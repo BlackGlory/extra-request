@@ -19,7 +19,7 @@ export function formDataField(
 
     return {
       ...options
-    , payload: formData as FormData
+    , payload: formData
     }
   }
 }
