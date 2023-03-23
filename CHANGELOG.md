@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [8.2.0](https://github.com/BlackGlory/extra-request/compare/v8.1.7...v8.2.0) (2023-03-23)
+
+
+### Features
+
+* add `redirect` ([766a083](https://github.com/BlackGlory/extra-request/commit/766a083fbee425a24ef496f19ac7773435f66a1a))
+
 ### [8.1.7](https://github.com/BlackGlory/extra-request/compare/v8.1.6...v8.1.7) (2023-03-10)
 
 ### [8.1.6](https://github.com/BlackGlory/extra-request/compare/v8.1.5...v8.1.6) (2023-01-21)
