@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [8.3.0](https://github.com/BlackGlory/extra-request/compare/v8.2.0...v8.3.0) (2023-03-23)
+
+
+### Features
+
+* add `body` ([e518317](https://github.com/BlackGlory/extra-request/commit/e518317dd76142671bdd088187f945804a079a0a))
+
 ## [8.2.0](https://github.com/BlackGlory/extra-request/compare/v8.1.7...v8.2.0) (2023-03-23)
 
 
