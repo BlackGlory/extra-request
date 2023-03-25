@@ -3,7 +3,9 @@ export type IRequestOptionsTransformer = (options: IRequestOptions) => IRequestO
 export interface IRequestOptions {
   url: URL
   headers: Headers
-  payload?: BodyInit
+  payload?:
+  | BodyInit // WHATWG
+  | NodeJS.ReadableStream // node-fetch
   signal?: AbortSignal
   keepalive?: boolean
   redirect?: RequestRedirect

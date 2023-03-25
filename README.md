@@ -25,7 +25,9 @@ const res = await fetch(req)
 interface IRequestOptions {
   url?: URL
   headers?: Headers
-  payload?: string | FormData
+  payload?:
+  | BodyInit // WHATWG
+  | NodeJS.ReadableStream // node-fetch
   signal?: AbortSignal
   keepalive?: boolean
   redirect?: RequestRedirect
@@ -192,5 +194,5 @@ function redirect(val: RequestRedirect): IRequestOptionsTransformer
 
 #### body
 ```ts
-function body(val: BodyInit): IRequestOptionsTransformer
+function body(val: BodyInit | NodeJS.ReadableStream): IRequestOptionsTransformer
 ```

@@ -38,7 +38,7 @@ function request(
     method
   , headers
   , signal: requestOptions.signal
-  , body: requestOptions.payload
+  , body: requestOptions.payload as any
   , keepalive: requestOptions.keepalive
   , redirect: requestOptions.redirect
   })
