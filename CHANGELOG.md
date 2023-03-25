@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [8.4.0](https://github.com/BlackGlory/extra-request/compare/v8.3.0...v8.4.0) (2023-03-25)
+
+
+### Features
+
+* **body:** add `NodeJS.ReadableStream` support ([33764b5](https://github.com/BlackGlory/extra-request/commit/33764b5598d8e8f6c699e7ecb3f41036e86a6171))
+
 ## [8.3.0](https://github.com/BlackGlory/extra-request/compare/v8.2.0...v8.3.0) (2023-03-23)
 
 
