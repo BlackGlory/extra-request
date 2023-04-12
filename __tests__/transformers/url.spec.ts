@@ -1,10 +1,20 @@
 import { createOptions } from './utils.js'
 import { url } from '@transformers/url.js'
 
-test('url(...urls: [string, ...string[]]): RequestOptionsTransformer', () => {
-  const options = createOptions()
+describe('url', () => {
+  test('absolute url', () => {
+    const options = createOptions()
 
-  const result = url('http://example.com', 'test')(options)
+    const result = url('http://example.com', 'test')(options)
 
-  expect(result.url.href).toBe('http://example.com/test')
+    expect(result.url.href).toBe('http://example.com/test')
+  })
+
+  test('relative url', () => {
+    const options = createOptions()
+
+    const result = url('/foo/bar', 'baz')(options)
+
+    expect(result.url.href).toBe('protocol://localhost/foo/baz')
+  })
 })
