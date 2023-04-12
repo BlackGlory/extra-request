@@ -76,7 +76,7 @@ function pipeRequestOptionsTransformers(
 ### Transformers
 #### url
 ```ts
-function url(...urls: [string, ...string[]]): IRequestOptionsTransformer
+function url(...urls: NonEmptyArray<string | URL>): IRequestOptionsTransformer
 ```
 
 #### text

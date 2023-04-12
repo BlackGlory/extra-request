@@ -17,4 +17,12 @@ describe('url', () => {
 
     expect(result.url.href).toBe('protocol://localhost/foo/baz')
   })
+
+  test('URL object', () => {
+    const options = createOptions()
+
+    const result = url(new URL('http://example.com'), 'test')(options)
+
+    expect(result.url.href).toBe('http://example.com/test')
+  })
 })
