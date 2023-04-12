@@ -40,15 +40,15 @@
     }
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.5.0",
+    "@commitlint/cli": "^17.5.1",
     "@commitlint/config-conventional": "^17.4.4",
     "@types/papaparse": "^5.3.7",
-    "@typescript-eslint/eslint-plugin": "^5.56.0",
-    "@typescript-eslint/parser": "^5.56.0",
+    "@typescript-eslint/eslint-plugin": "^5.58.0",
+    "@typescript-eslint/parser": "^5.58.0",
     "cross-env": "^7.0.3",
-    "eslint": "^8.36.0",
-    "extra-fetch": "^4.0.4",
-    "extra-filesystem": "^0.4.10",
+    "eslint": "^8.38.0",
+    "extra-fetch": "^4.0.6",
+    "extra-filesystem": "^0.5.0",
     "husky": "4",
     "npm-run-all": "^4.1.5",
     "rimraf": "^4.4.1",
@@ -58,14 +58,14 @@
     "typescript": "4.8",
     "typescript-transform-paths": "^3.4.6",
     "vite": "^4.2.1",
-    "vite-tsconfig-paths": "^4.0.7",
-    "vitest": "^0.29.7"
+    "vite-tsconfig-paths": "^4.1.0",
+    "vitest": "^0.30.1"
   },
   "dependencies": {
-    "@blackglory/prelude": "^0.3.1",
-    "extra-utils": "^5.1.0",
+    "@blackglory/prelude": "^0.3.2",
+    "extra-utils": "^5.1.1",
     "justypes": "^4.2.0",
-    "papaparse": "^5.4.0",
+    "papaparse": "^5.4.1",
     "url-operator": "^0.3.0"
   },
   "peerDependencies": {
