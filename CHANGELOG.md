@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [8.5.0](https://github.com/BlackGlory/extra-request/compare/v8.4.0...v8.5.0) (2023-04-12)
+
+
+### Features
+
+* add `document.baseURI` support ([909492a](https://github.com/BlackGlory/extra-request/commit/909492aed74c9c05ec62b980b2aefbafa6cf3a2f))
+* **url:** add relative url support ([8db0b28](https://github.com/BlackGlory/extra-request/commit/8db0b2814252c31a348ef386654ce77f5ca8ef80))
+* **url:** add URL objects support ([4ede33c](https://github.com/BlackGlory/extra-request/commit/4ede33cf86d7dc882a7e5d4b7f04799b2ebbfb1c))
+
+
+### Bug Fixes
+
+* misleading parameter names ([f650c7b](https://github.com/BlackGlory/extra-request/commit/f650c7bfafe6b5608f8c0d9a71866f34883f55c3))
+
 ## [8.4.0](https://github.com/BlackGlory/extra-request/compare/v8.3.0...v8.4.0) (2023-03-25)
 
 
