@@ -8,7 +8,11 @@ export function pipeRequestOptionsTransformers(
   ...transformers: Array<IRequestOptionsTransformer | Falsy>
 ): IRequestOptions {
   const base: IRequestOptions = {
-    url: new URL('http://localhost')
+    url: new URL(
+      typeof document !== 'undefined'
+    ? document.baseURI
+    : 'http://localhost'
+    )
   , headers: new Headers()
   }
 
