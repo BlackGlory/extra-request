@@ -1,6 +1,6 @@
 {
   "name": "extra-request",
-  "version": "8.5.3",
+  "version": "8.5.4",
   "description": "Utilities for Request",
   "type": "module",
   "sideEffects": false,
