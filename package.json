@@ -15,8 +15,14 @@
   "main": "lib/index.js",
   "exports": {
     ".": "./lib/index.js",
-    "./transformers": "./lib/transformers/index.js",
-    "./transformers/*": "./lib/transformers/*.js"
+    "./transformers": {
+      "default": "./lib/transformers/index.js",
+      "types": "./lib/transformers/index.d.ts"
+    },
+    "./transformers/*": {
+      "default": "./lib/transformers/*.js",
+      "types": "./lib/transformers/*.d.ts"
+    }
   },
   "engines": {
     "node": ">=16"
