@@ -1,7 +1,7 @@
 import { createOptions } from './utils.js'
 import { headers } from '@transformers/headers.js'
 
-test('headers(headers: { [name: string]: string }): RequestOptionsTransformer', () => {
+test('headers', () => {
   const options = createOptions()
 
   const result = headers({

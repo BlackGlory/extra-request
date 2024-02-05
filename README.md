@@ -113,7 +113,9 @@ function appendHeader(name: string, value: string): IRequestOptionsTransformer
 
 #### headers
 ```ts
-function headers(headers: { [name: string]: string }): IRequestOptionsTransformer
+function headers<T extends Record<string, string>>(
+  headers: T
+): IRequestOptionsTransformer
 ```
 
 #### host
@@ -159,8 +161,8 @@ function appendSearchParam(
 
 #### searchParams
 ```ts
-function searchParams(
-  searchParams: Record<string, string | number>
+function searchParams<T extends Record<string, string | number>>(
+  searchParams: T
 ): IRequestOptionsTransformer
 ```
 
