@@ -17,12 +17,12 @@
   "exports": {
     ".": "./lib/index.js",
     "./transformers": {
-      "default": "./lib/transformers/index.js",
-      "types": "./lib/transformers/index.d.ts"
+      "types": "./lib/transformers/index.d.ts",
+      "default": "./lib/transformers/index.js"
     },
     "./transformers/*": {
-      "default": "./lib/transformers/*.js",
-      "types": "./lib/transformers/*.d.ts"
+      "types": "./lib/transformers/*.d.ts",
+      "default": "./lib/transformers/*.js"
     }
   },
   "engines": {
