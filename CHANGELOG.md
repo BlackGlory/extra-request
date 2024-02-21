@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [8.5.5](https://github.com/BlackGlory/extra-request/compare/v8.5.4...v8.5.5) (2024-02-21)
+
+
+### Bug Fixes
+
+* move default condition to last one ([cd9a377](https://github.com/BlackGlory/extra-request/commit/cd9a3779bfebfbe58c30422fb60cdad6c34755a4))
+
 ### [8.5.4](https://github.com/BlackGlory/extra-request/compare/v8.5.3...v8.5.4) (2024-02-05)
 
 ### [8.5.3](https://github.com/BlackGlory/extra-request/compare/v8.5.2...v8.5.3) (2024-02-05)
