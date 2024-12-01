@@ -26,7 +26,7 @@
     }
   },
   "engines": {
-    "node": ">=16"
+    "node": ">=18.17.0"
   },
   "repository": "git@github.com:BlackGlory/extra-request.git",
   "author": "BlackGlory <woshenmedoubuzhidao@blackglory.me>",
@@ -47,10 +47,10 @@
     }
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.5.1",
-    "@commitlint/config-conventional": "^17.4.4",
+    "@commitlint/cli": "^19.6.0",
+    "@commitlint/config-conventional": "^19.6.0",
     "@eslint/js": "^9.16.0",
-    "@types/node": "16",
+    "@types/node": "18",
     "@types/papaparse": "^5.3.15",
     "cross-env": "^7.0.3",
     "eslint": "^9.16.0",
@@ -58,7 +58,7 @@
     "extra-filesystem": "^0.5.1",
     "husky": "4",
     "npm-run-all": "^4.1.5",
-    "rimraf": "^4.4.1",
+    "rimraf": "5",
     "standard-version": "^9.5.0",
     "ts-patch": "^3.2.1",
     "tslib": "^2.8.1",
@@ -70,12 +70,12 @@
     "vitest": "^2.1.6"
   },
   "dependencies": {
-    "@blackglory/prelude": "^0.3.2",
-    "extra-utils": "^5.1.1",
-    "js-base64": "^3.7.5",
-    "justypes": "^4.2.0",
+    "@blackglory/prelude": "^0.4.0",
+    "extra-utils": "^5.16.0",
+    "js-base64": "^3.7.7",
+    "justypes": "^4.4.1",
     "papaparse": "^5.4.1",
-    "url-operator": "^0.3.0"
+    "url-operator": "^0.3.1"
   },
   "peerDependencies": {
     "extra-fetch": "^3.0.0 || ^4.0.0"
