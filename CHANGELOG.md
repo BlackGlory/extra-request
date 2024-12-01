@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [9.0.1](https://github.com/BlackGlory/extra-request/compare/v9.0.0...v9.0.1) (2024-12-01)
+
+
+### Bug Fixes
+
+* typescript paths ([483be84](https://github.com/BlackGlory/extra-request/commit/483be846080d077e4340d9f87c8cee5dd8c3e0c6))
+
 ## [9.0.0](https://github.com/BlackGlory/extra-request/compare/v8.5.5...v9.0.0) (2024-12-01)
 
 
