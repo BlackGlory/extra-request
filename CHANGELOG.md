@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [10.0.0](https://github.com/BlackGlory/extra-request/compare/v9.0.1...v10.0.0) (2025-06-15)
+
+
+### ⚠ BREAKING CHANGES
+
+* - Node.js v18.17.0 => Node.js v22
+- The module requires `extra-fetch@^5.0.1`
+
+* upgrade dependencies ([fbabda8](https://github.com/BlackGlory/extra-request/commit/fbabda8873998639da70d3205ca9f9c6820cfb36))
+
 ### [9.0.1](https://github.com/BlackGlory/extra-request/compare/v9.0.0...v9.0.1) (2024-12-01)
 
 
