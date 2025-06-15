@@ -2,8 +2,8 @@ import { FormData } from 'extra-fetch'
 import { createOptions } from './utils.js'
 import { formDataField } from '@transformers/form-data-field.js'
 
-describe('formDataField(naem: string, value: string | string[] | Blob | ReadableStream | NodeJS.ReadableStream): RequestOptionsTransformer', () => {
-  it('return RequestOptionsTransformer', () => {
+describe('formDataField', () => {
+  test('non-array', () => {
     const options = createOptions()
 
     const result = formDataField('name', 'value')(options)
@@ -11,7 +11,7 @@ describe('formDataField(naem: string, value: string | string[] | Blob | Readable
     expect(result.payload).toBeInstanceOf(FormData)
   })
 
-  test('value is array', () => {
+  test('array', () => {
     const options = createOptions()
 
     const result = formDataField('name', ['value1', 'value2'])(options)
