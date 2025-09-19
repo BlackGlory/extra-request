@@ -1,7 +1,8 @@
+import { test, expect } from 'vitest'
 import { createOptions } from './utils.js'
 import { search } from '@transformers/search.js'
 
-test('search(search: string): RequestOptionsTransformer', () => {
+test('search', () => {
   const options = createOptions()
 
   const result = search('param=value')(options)

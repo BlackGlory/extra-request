@@ -27,7 +27,7 @@ export function del(...transformers: Array<IRequestOptionsTransformer | Falsy>):
   return request('DELETE', ...transformers)
 }
 
-function request(
+export function request(
   method: 'GET' | 'HEAD' | 'PUT' | 'POST' | 'PATCH' | 'DELETE'
 , ...transformers: Array<IRequestOptionsTransformer | Falsy>
 ): Request {
@@ -38,7 +38,7 @@ function request(
     method
   , headers
   , signal: requestOptions.signal
-  , body: requestOptions.payload as any
+  , body: requestOptions.payload
   , keepalive: requestOptions.keepalive
   , redirect: requestOptions.redirect
   })

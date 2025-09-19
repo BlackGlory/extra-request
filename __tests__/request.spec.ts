@@ -1,44 +1,52 @@
+import { test, expect } from 'vitest'
 import { url } from '@src/transformers/index.js'
-import { get, head, post, put, patch, del } from '@src/request.js'
+import { get, head, post, put, patch, del, request } from '@src/request.js'
 
-test('get(...transformers: Array<RequestOptionsTransformer | Falsy>): Request', () => {
+test('get', () => {
   const req = get(url('http://example.com'))
 
   expect(req.method).toBe('GET')
   expect(req.url).toBe('http://example.com/')
 })
 
-test('head(...transformers: Array<RequestOptionsTransformer | Falsy>): Request', () => {
+test('head', () => {
   const req = head(url('http://example.com'))
 
   expect(req.method).toBe('HEAD')
   expect(req.url).toBe('http://example.com/')
 })
 
-test('post(...transformers: Array<RequestOptionsTransformer | Falsy>): Request', () => {
+test('post', () => {
   const req = post(url('http://example.com'))
 
   expect(req.method).toBe('POST')
   expect(req.url).toBe('http://example.com/')
 })
 
-test('put(...transformers: Array<RequestOptionsTransformer | Falsy>): Request', () => {
+test('put', () => {
   const req = put(url('http://example.com'))
 
   expect(req.method).toBe('PUT')
   expect(req.url).toBe('http://example.com/')
 })
 
-test('patch(...transformers: Array<RequestOptionsTransformer | Falsy>): Request', () => {
+test('patch', () => {
   const req = patch(url('http://example.com'))
 
   expect(req.method).toBe('PATCH')
   expect(req.url).toBe('http://example.com/')
 })
 
-test('del(...transformers: Array<RequestOptionsTrransformer | Falsy>): Request', () => {
+test('del', () => {
   const req = del(url('http://example.com'))
 
   expect(req.method).toBe('DELETE')
+  expect(req.url).toBe('http://example.com/')
+})
+
+test('request', () => {
+  const req = request('GET', url('http://example.com'))
+
+  expect(req.method).toBe('GET')
   expect(req.url).toBe('http://example.com/')
 })

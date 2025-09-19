@@ -1,7 +1,8 @@
+import { test, expect } from 'vitest'
 import { pathname } from '@transformers/pathname.js'
 import { createOptions } from './utils.js'
 
-test('pathname(pathname: string): RequestOptionsTransformer', () => {
+test('pathname', () => {
   const options = createOptions()
 
   const result = pathname('test')(options)

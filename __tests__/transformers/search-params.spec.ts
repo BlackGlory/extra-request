@@ -1,3 +1,4 @@
+import { test, expect } from 'vitest'
 import { createOptions } from './utils.js'
 import { searchParams } from '@transformers/search-params.js'
 

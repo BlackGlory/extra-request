@@ -64,6 +64,14 @@ function patch(...transformers: Array<IRequestOptionsTransformer | Falsy>): Requ
 function del(...transformers: Array<IRequestOptionsTrransformer | Falsy>): Request
 ```
 
+### request
+```ts
+function request(
+  method: 'GET' | 'HEAD' | 'PUT' | 'POST' | 'PATCH' | 'DELETE'
+, ...transformers: Array<IRequestOptionsTransformer | Falsy>
+): Request
+```
+
 ### pipeRequestOptionsTransformers
 ```ts
 function pipeRequestOptionsTransformers(

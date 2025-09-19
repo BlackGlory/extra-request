@@ -1,8 +1,9 @@
+import { test, expect } from 'vitest'
 import { createOptions } from './utils.js'
 import { signal } from '@transformers/signal.js'
 import { AbortController } from 'extra-fetch'
 
-test('signal(signal: AbortSignal): RequestOptionsTransformer', () => {
+test('signal', () => {
   const controller = new AbortController()
   const options = createOptions()
 

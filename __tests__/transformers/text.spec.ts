@@ -1,7 +1,8 @@
+import { test, expect } from 'vitest'
 import { createOptions } from './utils.js'
 import { text } from '@transformers/text.js'
 
-test('text(payload: string): RequestOptionsTransformer', () => {
+test('text', () => {
   const options = createOptions()
 
   const result = text('test')(options)

@@ -1,7 +1,8 @@
+import { test, expect } from 'vitest'
 import { createOptions } from './utils.js'
 import { appendHeader } from '@transformers/append-header.js'
 
-test('appendHeader(name: string, value: string): RequestOptionsTransformer', () => {
+test('appendHeader', () => {
   const options = createOptions()
 
   let result = appendHeader('Content-Type', 'text/plain')(options)

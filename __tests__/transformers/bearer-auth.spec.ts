@@ -1,7 +1,8 @@
+import { test, expect } from 'vitest'
 import { createOptions } from './utils.js'
 import { bearerAuth } from '@transformers/bearer-auth.js'
 
-test('bearerAuth(token: string): RequestOptionsTransformer', () => {
+test('bearerAuth', () => {
   const token = 'token'
   const options = createOptions()
 

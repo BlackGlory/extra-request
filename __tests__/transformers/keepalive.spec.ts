@@ -1,18 +1,21 @@
+import { describe, test, expect } from 'vitest'
 import { keepalive } from '@transformers/keepalive.js'
 import { createOptions } from './utils.js'
 
-test('keepalive(): RequestOptionsTransformer', () => {
-  const options = createOptions()
+describe('keepalive', () => {
+  test('(): RequestOptionsTransformer', () => {
+    const options = createOptions()
 
-  const result = keepalive()(options)
+    const result = keepalive()(options)
 
-  expect(result.keepalive).toBe(true)
-})
+    expect(result.keepalive).toBe(true)
+  })
 
-test('keepalive(val: boolean): RequestOptionsTransformer', () => {
-  const options = createOptions()
+  test('(val: boolean): RequestOptionsTransformer', () => {
+    const options = createOptions()
 
-  const result = keepalive(false)(options)
+    const result = keepalive(false)(options)
 
-  expect(result.keepalive).toBe(false)
+    expect(result.keepalive).toBe(false)
+  })
 })

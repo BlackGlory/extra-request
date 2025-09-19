@@ -1,3 +1,4 @@
+import { describe, test, expect } from 'vitest'
 import { appendPathname } from '@transformers/append-pathname.js'
 import { createOptions } from './utils.js'
 
