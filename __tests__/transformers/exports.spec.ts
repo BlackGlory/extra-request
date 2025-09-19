@@ -32,6 +32,7 @@ test('exports', () => {
   , 'keepalive'
   , 'redirect'
   , 'body'
+  , 'cache'
   ].sort()
 
   const actualExports = Object.keys(target).sort()

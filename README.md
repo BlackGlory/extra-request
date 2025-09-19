@@ -23,12 +23,13 @@ const res = await fetch(req)
 ## API
 ```ts
 interface IRequestOptions {
-  url?: URL
-  headers?: Headers
+  url: URL
+  headers: Headers
   payload?: BodyInit
   signal?: AbortSignal
   keepalive?: boolean
   redirect?: RequestRedirect
+  cache?: RequestCache
 }
 
 type IRequestOptionsTransformer = (options: IRequestOptions) => RequestOptions
@@ -192,15 +193,20 @@ function bearerAuth(token: string): IRequestOptionsTransformer
 
 #### keepalive
 ```ts
-function keepalive(val: boolean = true): IRequestOptionsTransformer
+function keepalive(keepalive: boolean = true): IRequestOptionsTransformer
 ```
 
 #### redirect
 ```ts
-function redirect(val: RequestRedirect): IRequestOptionsTransformer
+function redirect(redirect: RequestRedirect): IRequestOptionsTransformer
 ```
 
 #### body
 ```ts
-function body(val: BodyInit): IRequestOptionsTransformer
+function body(body: BodyInit): IRequestOptionsTransformer
+```
+
+####
+```ts
+function cache(cache: RequestCache): IRequestOptionsTransformer
 ```
