@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [10.1.0](https://github.com/BlackGlory/extra-request/compare/v10.0.0...v10.1.0) (2025-09-19)
+
+
+### Features
+
+* add `request` ([ff085d2](https://github.com/BlackGlory/extra-request/commit/ff085d231f029d0da3675d12aafc3cdc4d2cccb7))
+* add a new transfromer `cache` ([326961d](https://github.com/BlackGlory/extra-request/commit/326961d930ccc0a0704a5285affc643027055509))
+
 ## [10.0.0](https://github.com/BlackGlory/extra-request/compare/v9.0.1...v10.0.0) (2025-06-15)
 
 
