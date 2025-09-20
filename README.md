@@ -206,7 +206,7 @@ function redirect(redirect: RequestRedirect): IRequestOptionsTransformer
 function body(body: BodyInit): IRequestOptionsTransformer
 ```
 
-####
+#### cache
 ```ts
 function cache(cache: RequestCache): IRequestOptionsTransformer
 ```
