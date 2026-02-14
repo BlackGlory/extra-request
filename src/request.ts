@@ -41,5 +41,6 @@ export function request(
   , body: requestOptions.payload
   , keepalive: requestOptions.keepalive
   , redirect: requestOptions.redirect
+  , cache: requestOptions.cache
   })
 }
