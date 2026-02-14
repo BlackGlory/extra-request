@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [11.0.0](https://github.com/BlackGlory/extra-request/compare/v10.2.1...v11.0.0) (2026-02-14)
+
+
+### ⚠ BREAKING CHANGES
+
+* **csv:** Rewritten `csv()`
+
+### Features
+
+* **csv:** rewrite ([7be6e72](https://github.com/BlackGlory/extra-request/commit/7be6e72a8b55b38fd5c6eff3ea404842bf0d5fdd))
+
 ### [10.2.1](https://github.com/BlackGlory/extra-request/compare/v10.2.0...v10.2.1) (2026-02-14)
 
 
