@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [10.2.0](https://github.com/BlackGlory/extra-request/compare/v10.1.0...v10.2.0) (2026-02-14)
+
+
+### Features
+
+* **transformer:** add `hostname()` ([a7f15b6](https://github.com/BlackGlory/extra-request/commit/a7f15b64feb01d2655b6a374342e9a8799f5e5d7))
+
 ## [10.1.0](https://github.com/BlackGlory/extra-request/compare/v10.0.0...v10.1.0) (2025-09-19)
 
 
