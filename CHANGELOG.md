@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [10.2.1](https://github.com/BlackGlory/extra-request/compare/v10.2.0...v10.2.1) (2026-02-14)
+
+
+### Bug Fixes
+
+* cache support ([200f01f](https://github.com/BlackGlory/extra-request/commit/200f01f52504e820cdf15a971cb1631e0002a9c1))
+
 ## [10.2.0](https://github.com/BlackGlory/extra-request/compare/v10.1.0...v10.2.0) (2026-02-14)
 
 
