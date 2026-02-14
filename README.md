@@ -130,6 +130,11 @@ function headers<T extends Record<string, string>>(
 function host(host: string): IRequestOptionsTransformer
 ```
 
+#### hostname
+```ts
+function hostname(hostname: string): IRequestOptionsTransformer
+```
+
 #### port
 ```ts
 function port(port: number): IRequestOptionsTransformer

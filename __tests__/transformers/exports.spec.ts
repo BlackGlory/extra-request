@@ -15,6 +15,7 @@ test('exports', () => {
   , 'accept'
 
   , 'host'
+  , 'hostname'
   , 'port'
   , 'pathname'
   , 'appendPathname'

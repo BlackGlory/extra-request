@@ -10,6 +10,7 @@ export * from './headers.js'
 export * from './accept.js'
 
 export * from './host.js'
+export * from './hostname.js'
 export * from './port.js'
 export * from './pathname.js'
 export * from './append-pathname.js'
