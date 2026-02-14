@@ -100,7 +100,10 @@ function json<T extends JSONValue | JSONSerializable<any>>(
 
 #### csv
 ```ts
-function csv<T extends object>(payload: T[]): IRequestOptionsTransformer
+function csv<Field extends string>(
+  header: NonEmptyArray<Field>
+, data: Array<Record<Field, number | string>>
+): IRequestOptionsTransformer
 ```
 
 #### signal

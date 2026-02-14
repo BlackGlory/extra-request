@@ -27,7 +27,7 @@ test('csv', () => {
     }
   ]
 
-  const result = csv(payload)(options)
+  const result = csv(['key', 'value'], payload)(options)
 
   // RFC 4180 and MIME standards
   expect(result.headers.get('Content-Type')).toBe('text/csv')
