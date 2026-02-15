@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [11.0.1](https://github.com/BlackGlory/extra-request/compare/v11.0.0...v11.0.1) (2026-02-15)
+
+
+### Bug Fixes
+
+* **text:** use `text/plain` as content-type ([64b7d26](https://github.com/BlackGlory/extra-request/commit/64b7d26aef05b7160625a6f223b788bcfbcaaf4d))
+
 ## [11.0.0](https://github.com/BlackGlory/extra-request/compare/v10.2.1...v11.0.0) (2026-02-14)
 
 
