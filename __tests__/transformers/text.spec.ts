@@ -7,6 +7,6 @@ test('text', () => {
 
   const result = text('test')(options)
 
-  expect(result.headers.get('Content-Type')).toBe('application/x-www-form-urlencoded')
+  expect(result.headers.get('Content-Type')).toBe('text/plain')
   expect(result.payload).toBe('test')
 })
