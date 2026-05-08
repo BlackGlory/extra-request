@@ -34,6 +34,7 @@ test('exports', () => {
   , 'redirect'
   , 'body'
   , 'cache'
+  , 'priority'
   ].sort()
 
   const actualExports = Object.keys(target).sort()

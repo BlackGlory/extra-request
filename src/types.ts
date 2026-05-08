@@ -11,4 +11,5 @@ export interface IRequestOptions {
   keepalive?: boolean
   redirect?: RequestRedirect
   cache?: RequestCache
+  priority?: RequestPriority
 }

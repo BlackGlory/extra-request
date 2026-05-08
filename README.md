@@ -30,6 +30,7 @@ interface IRequestOptions {
   keepalive?: boolean
   redirect?: RequestRedirect
   cache?: RequestCache
+  priority?: RequestPriority
 }
 
 type IRequestOptionsTransformer = (options: IRequestOptions) => RequestOptions
@@ -217,4 +218,9 @@ function body(body: BodyInit): IRequestOptionsTransformer
 #### cache
 ```ts
 function cache(cache: RequestCache): IRequestOptionsTransformer
+```
+
+#### priority
+```ts
+function priority(priority: RequestPriority): IRequestOptionsTransformer
 ```
