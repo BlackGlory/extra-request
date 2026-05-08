@@ -70,7 +70,7 @@
   },
   "dependencies": {
     "@blackglory/prelude": "^0.4.0",
-    "extra-utils": "^5.20.0",
+    "extra-utils": "^6.1.0",
     "js-base64": "^3.7.7",
     "justypes": "^4.4.1",
     "papaparse": "^5.5.3",
