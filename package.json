@@ -74,7 +74,7 @@
     "js-base64": "^3.7.7",
     "justypes": "^4.4.1",
     "papaparse": "^5.5.3",
-    "url-operator": "^0.3.2"
+    "url-operator": "^0.3.3"
   },
   "peerDependencies": {
     "extra-fetch": "^5.0.1"

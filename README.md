@@ -176,7 +176,7 @@ function appendSearchParam(
 
 #### searchParams
 ```ts
-function searchParams<T extends Record<string, string | number>>(
+function searchParams<T extends Record<string, string | number | undefined>>(
   searchParams: T
 ): IRequestOptionsTransformer
 ```

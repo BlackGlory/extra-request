@@ -4384,10 +4384,10 @@ uri-js@^4.2.2:
   dependencies:
     punycode "^2.1.0"
 
-url-operator@^0.3.2:
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/url-operator/-/url-operator-0.3.2.tgz#d3f2116d46b0ef856cd0a81f4709e4579da85b6f"
-  integrity sha512-ZuSeOInpP0QRAzBs8Sk6nZ6hADtqAVsD85oUN4/8UjuXtXBm/lN3T7jhAtqFI1UhT1upUfpSF29s5LogkbOmCQ==
+url-operator@^0.3.3:
+  version "0.3.3"
+  resolved "https://registry.yarnpkg.com/url-operator/-/url-operator-0.3.3.tgz#c6538ca8deb79a9c5a98aa04c966f9acb8054d90"
+  integrity sha512-9m8cJa38fNf2ZMdfw+TJ9VcEIyoKaHtJNAh/CnWg34l5MuDyNKleAejb2TVGGHVTfUe5tqVXqzMI7i1KuF98SA==
   dependencies:
     "@blackglory/prelude" "^0.3.1"
 

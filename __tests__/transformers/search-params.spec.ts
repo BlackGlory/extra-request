@@ -5,7 +5,11 @@ import { searchParams } from '@transformers/search-params.js'
 test('searchParams', () => {
   const options = createOptions()
 
-  const result = searchParams({ param: 'value' })(options)
+  const result = searchParams({
+    foo: 'foo-value'
+  , bar: 'bar-value'
+  , baz: undefined
+  })(options)
 
-  expect(result.url.search).toBe('?param=value')
+  expect(result.url.search).toBe('?foo=foo-value&bar=bar-value')
 })
