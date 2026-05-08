@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [11.2.0](https://github.com/BlackGlory/extra-request/compare/v11.1.0...v11.2.0) (2026-05-08)
+
+
+### Features
+
+* **transformer:** add `priority()` ([eb4b48b](https://github.com/BlackGlory/extra-request/commit/eb4b48b05088d1cdf14fc52cbd8f0bc8c9d193fb))
+
 ## [11.1.0](https://github.com/BlackGlory/extra-request/compare/v11.0.2...v11.1.0) (2026-05-08)
 
 
