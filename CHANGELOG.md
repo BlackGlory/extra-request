@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [11.1.0](https://github.com/BlackGlory/extra-request/compare/v11.0.2...v11.1.0) (2026-05-08)
+
+
+### Features
+
+* **search-params:** improve the type of `searchParams` ([fd7fd8c](https://github.com/BlackGlory/extra-request/commit/fd7fd8cca56ca501fd730d65b2d215c0d5591d8f))
+
 ### [11.0.2](https://github.com/BlackGlory/extra-request/compare/v11.0.1...v11.0.2) (2026-02-15)
 
 
