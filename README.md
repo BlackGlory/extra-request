@@ -63,7 +63,7 @@ function patch(...transformers: Array<IRequestOptionsTransformer | Falsy>): Requ
 
 ### del
 ```ts
-function del(...transformers: Array<IRequestOptionsTrransformer | Falsy>): Request
+function del(...transformers: Array<IRequestOptionsTransformer | Falsy>): Request
 ```
 
 ### request
