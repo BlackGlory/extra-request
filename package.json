@@ -53,8 +53,8 @@
     "@types/papaparse": "^5.3.16",
     "cross-env": "^7.0.3",
     "eslint": "^9.29.0",
-    "extra-fetch": "^5.0.1",
-    "extra-filesystem": "^0.5.2",
+    "extra-fetch": "^5.2.0",
+    "extra-filesystem": "^0.6.2",
     "husky": "4",
     "npm-run-all": "^4.1.5",
     "rimraf": "6.0.1",
@@ -69,13 +69,13 @@
     "vitest": "^3.2.3"
   },
   "dependencies": {
-    "@blackglory/prelude": "^0.4.0",
+    "@blackglory/prelude": "^0.5.0",
     "extra-stream": "^0.4.0",
-    "extra-utils": "^6.1.0",
-    "js-base64": "^3.7.7",
-    "justypes": "^4.4.1",
-    "papaparse": "^5.5.3",
-    "url-operator": "^0.3.3"
+    "extra-utils": "^6.2.0",
+    "js-base64": "^3.9.4",
+    "justypes": "^4.5.0",
+    "papaparse": "^5.7.0",
+    "url-operator": "^0.3.5"
   },
   "peerDependencies": {
     "extra-fetch": "^5.0.1"
