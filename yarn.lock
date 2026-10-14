@@ -2012,6 +2012,13 @@ extra-rand@^0.1.1:
   resolved "https://registry.yarnpkg.com/extra-rand/-/extra-rand-0.1.5.tgz#5a3bbba6bbc8ed4e2c0c9dc66a4a2b6a309040df"
   integrity sha512-xOaelLjCoQrCjnpNHCwoKHew4Jiu2ZeFGVEce0MgFCvPoZGnu9KO/zv+OObnvV4Np8k05/Q0x1GaEqHXuveeYg==
 
+extra-stream@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/extra-stream/-/extra-stream-0.4.0.tgz#a704a7a81c626d87f556cb07a091de91e6b2c1fb"
+  integrity sha512-MSyD47V+9F2Q21OJqaMwmGYbWt7zITxnmqoOyGtcMqqK2ICzk9wYNwzowtXbycm3qjzd3SOB9OORBgjrgr07lw==
+  dependencies:
+    "@blackglory/prelude" "^0.4.0"
+
 extra-timers@^0.2.5, extra-timers@^0.2.6:
   version "0.2.6"
   resolved "https://registry.yarnpkg.com/extra-timers/-/extra-timers-0.2.6.tgz#a82d0f90c9090963eed42da63a547d381be2e77f"
