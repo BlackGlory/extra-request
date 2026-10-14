@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [11.2.1](https://github.com/BlackGlory/extra-request/compare/v11.2.0...v11.2.1) (2026-10-14)
+
+
+### Bug Fixes
+
+* **undici:** set duplex when the body is a ReadableStream ([eb7550c](https://github.com/BlackGlory/extra-request/commit/eb7550cd5924c05bc40c007b0775b915788933ef))
+
 ## [11.2.0](https://github.com/BlackGlory/extra-request/compare/v11.1.0...v11.2.0) (2026-05-08)
 
 
