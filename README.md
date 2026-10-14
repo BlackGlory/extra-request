@@ -69,7 +69,7 @@ function del(...transformers: Array<IRequestOptionsTransformer | Falsy>): Reques
 ### request
 ```ts
 function request(
-  method: 'GET' | 'HEAD' | 'PUT' | 'POST' | 'PATCH' | 'DELETE'
+  method: string
 , ...transformers: Array<IRequestOptionsTransformer | Falsy>
 ): Request
 ```
