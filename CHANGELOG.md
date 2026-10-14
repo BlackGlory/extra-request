@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [11.4.0](https://github.com/BlackGlory/extra-request/compare/v11.3.0...v11.4.0) (2026-10-14)
+
+
+### Features
+
+* **headers:** allow the input value is a Headers object ([c23781c](https://github.com/BlackGlory/extra-request/commit/c23781cbbb5d2a30d274e459d7d8467d2c76cb31))
+
 ## [11.3.0](https://github.com/BlackGlory/extra-request/compare/v11.2.1...v11.3.0) (2026-10-14)
 
 
