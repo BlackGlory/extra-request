@@ -66,6 +66,11 @@ function patch(...transformers: Array<IRequestOptionsTransformer | Falsy>): Requ
 function del(...transformers: Array<IRequestOptionsTransformer | Falsy>): Request
 ```
 
+### query
+```ts
+function query(...transformers: Array<IRequestOptionsTransformer | Falsy>): Request
+```
+
 ### request
 ```ts
 function request(

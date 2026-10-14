@@ -1,6 +1,6 @@
 import { describe, test, expect } from 'vitest'
 import { body, url } from '@src/transformers/index.js'
-import { get, head, post, put, patch, del, request } from '@src/request.js'
+import { get, head, post, put, patch, del, request, query } from '@src/request.js'
 
 describe('shortcut', () => {
   test('get', () => {
@@ -42,6 +42,13 @@ describe('shortcut', () => {
     const req = del(url('http://example.com'))
 
     expect(req.method).toBe('DELETE')
+    expect(req.url).toBe('http://example.com/')
+  })
+
+  test('query', () => {
+    const req = query(url('http://example.com'))
+
+    expect(req.method).toBe('QUERY')
     expect(req.url).toBe('http://example.com/')
   })
 })

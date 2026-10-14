@@ -28,6 +28,10 @@ export function del(...transformers: Array<IRequestOptionsTransformer | Falsy>):
   return request('DELETE', ...transformers)
 }
 
+export function query(...transformers: Array<IRequestOptionsTransformer | Falsy>): Request {
+  return request('QUERY', ...transformers)
+}
+
 export function request(
   method: string
 , ...transformers: Array<IRequestOptionsTransformer | Falsy>
