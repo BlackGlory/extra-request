@@ -132,6 +132,9 @@ function appendHeader(name: string, value: string): IRequestOptionsTransformer
 function headers<T extends Record<string, string>>(
   headers: T
 ): IRequestOptionsTransformer
+function headers(
+  headers: Headers
+): IRequestOptionsTransformer
 ```
 
 #### host
